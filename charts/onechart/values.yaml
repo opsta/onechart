@@ -81,5 +81,5 @@ monitor:
 container: {}
 podSpec: {}
 
-service:
-  enabled: false
+# service:
+#   enabled: false
