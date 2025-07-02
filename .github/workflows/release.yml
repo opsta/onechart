@@ -84,9 +84,9 @@ jobs:
     - name: Publish to to GHCR
       run: |
         echo ${{ secrets.HELM_TOKEN }} | helm registry login ghcr.io --username ${{ github.actor }} --password-stdin
-        helm push docs/onechart-${CHART_VERSION}.tgz  oci://ghcr.io/gimlet-io
-        helm push docs/cron-job-${CHART_VERSION}.tgz  oci://ghcr.io/gimlet-io
-        helm push docs/static-site-${STATIC_SITE_CHART_VERSION}.tgz  oci://ghcr.io/gimlet-io
+        helm push docs/onechart-${CHART_VERSION}.tgz  oci://ghcr.io/opsta
+        helm push docs/cron-job-${CHART_VERSION}.tgz  oci://ghcr.io/opsta
+        helm push docs/static-site-${STATIC_SITE_CHART_VERSION}.tgz  oci://ghcr.io/opsta
       env:
         CHART_VERSION: ${{ steps.chart_version.outputs.chart_version }}
         STATIC_SITE_CHART_VERSION: ${{ steps.chart_version.outputs.static_site_chart_version }}
