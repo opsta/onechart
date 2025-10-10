@@ -16,6 +16,8 @@ image:
 # vars:
 #   MY_VAR: "value"
 
+serviceAccount: "{{ .Release.Name }}"
+
 replicas: 1
 
 nameOverride: ""
