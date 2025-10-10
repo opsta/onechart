@@ -16,7 +16,7 @@ image:
 # vars:
 #   MY_VAR: "value"
 
-serviceAccount: "{{ .Release.Name }}"
+serviceAccount: nginx
 
 replicas: 1
 
