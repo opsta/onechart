@@ -16,6 +16,8 @@ image:
 # vars:
 #   MY_VAR: "value"
 
+serviceAccount: nginx
+
 replicas: 1
 
 nameOverride: ""
