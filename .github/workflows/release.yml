@@ -9,13 +9,18 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
     steps:
-  
+
     - name: Checkout main
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    
+
     - name: Extract tag version
       id: versioning
       run: |
@@ -83,10 +88,12 @@ jobs:
 
     - name: Publish to to GHCR
       run: |
-        echo ${{ secrets.HELM_TOKEN }} | helm registry login ghcr.io --username ${{ github.repository_owner }} --password-stdin
-        helm push docs/onechart-${CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository_owner }}
-        helm push docs/cron-job-${CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository_owner }}
-        helm push docs/static-site-${STATIC_SITE_CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository_owner }}
+        echo ${{ secrets.GITHUB_TOKEN }} | helm registry login ghcr.io \
+          --username ${{ github.repository_owner }} \
+          --password-stdin
+        helm push docs/onechart-${CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository }}
+        helm push docs/cron-job-${CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository }}
+        helm push docs/static-site-${STATIC_SITE_CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository }}
       env:
         CHART_VERSION: ${{ steps.chart_version.outputs.chart_version }}
         STATIC_SITE_CHART_VERSION: ${{ steps.chart_version.outputs.static_site_chart_version }}
