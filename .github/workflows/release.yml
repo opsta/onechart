@@ -72,21 +72,21 @@ jobs:
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "Github Action"
-        git checkout master
+        git checkout main
         make package
         git add .
         git commit -m "Publishing $TAG_VERSION to the Helm repository"
-        git push origin master
+        git push origin main
       env:
         TAG_VERSION: ${{ steps.versioning.outputs.tag_version }}
         title: Release ${{ github.ref }}
 
     - name: Publish to to GHCR
       run: |
-        echo ${{ secrets.HELM_TOKEN }} | helm registry login ghcr.io --username ${{ github.actor }} --password-stdin
-        helm push docs/onechart-${CHART_VERSION}.tgz  oci://ghcr.io/opsta
-        helm push docs/cron-job-${CHART_VERSION}.tgz  oci://ghcr.io/opsta
-        helm push docs/static-site-${STATIC_SITE_CHART_VERSION}.tgz  oci://ghcr.io/opsta
+        echo ${{ secrets.HELM_TOKEN }} | helm registry login ghcr.io --username ${{ github.repository_owner }} --password-stdin
+        helm push docs/onechart-${CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository_owner }}
+        helm push docs/cron-job-${CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository_owner }}
+        helm push docs/static-site-${STATIC_SITE_CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository_owner }}
       env:
         CHART_VERSION: ${{ steps.chart_version.outputs.chart_version }}
         STATIC_SITE_CHART_VERSION: ${{ steps.chart_version.outputs.static_site_chart_version }}
@@ -94,7 +94,7 @@ jobs:
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "Github Action"
-        git checkout master
+        git checkout main
 
         without_major_version=${CHART_VERSION#*.}
         without_patch_version=${without_major_version%.*}
@@ -106,10 +106,11 @@ jobs:
         sed -i "s/version: $CHART_VERSION/version: $increased_version/" charts/onechart/Chart.yaml
         sed -i "s/version: $CHART_VERSION/version: $increased_version/" charts/cron-job/Chart.yaml
         sed -i "s/version: $CHART_VERSION/version: $increased_version/" charts/static-site/Chart.yaml
+        sed -i "s/--version $CHART_VERSION/--version $increased_version/" README.md
 
         git status
         git add .
         git commit -m "The next release version will be $increased_version"
-        git push origin master
+        git push origin main
       env:
         CHART_VERSION: ${{ steps.chart_version.outputs.chart_version }}
