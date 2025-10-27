@@ -16,7 +16,9 @@ image:
 # vars:
 #   MY_VAR: "value"
 
-serviceAccount: nginx
+serviceAccount:
+  create: false
+  # name: my-service-account
 
 replicas: 1
 

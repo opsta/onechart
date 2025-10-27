@@ -88,7 +88,7 @@ image:
   tag: x.y.z
 
 imagePullSecrets:
- - regcred
+  - regcred
 EOF
 
 helm template my-release onechart/onechart -f values.yaml
@@ -282,7 +282,7 @@ The Nginx ingress controller must be set up in your cluster for this setting to 
 
 ### HTTPS
 
-To reference a TLS secret use the `tlsEnabled` field. The deployment will point to a secret named: `tls-$.Release.Name`
+To reference a TLS secret use the `tlsEnabled` field. The deployment will point to a secret named using the pattern `tls-<release-name>`.
 
 ```
 cat << EOF > values.yaml
@@ -316,7 +316,6 @@ ingress:
 +   cert-manager.io/cluster-issuer: letsencrypt
   host: my-app.mycompany.com
   tlsEnabled: true
-
 ```
 
 ### Listening on multiple domains
@@ -412,7 +411,7 @@ Enable it with:
 
 ```
 probe:
-  enabled: false
+  enabled: true
   path: "/"
 ```
 
@@ -421,7 +420,7 @@ Check the Kubernetes manifest:
 ```
 cat << EOF > values.yaml
 probe:
-  enabled: false
+  enabled: true
   path: "/"
 EOF
 
@@ -444,13 +443,13 @@ probe:
     failureThreshold: 3
 ```
 
-| Setting             | Description                                                                                                                                     |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| initialDelaySeconds | Number of seconds after the container has started before the probes is initiated.                                                               |
-| periodSeconds       | How often (in seconds) to perform the probe.                                                                                                    |
-| successThreshold    | Minimum consecutive successes for the probe to be considered successful after having failed.                                                    |
-| timeoutSeconds      | Number of seconds after which the probe times out.                                                                                              |
-| failureThreshold    | When a probe fails, Kubernetes will tries this many times before giving up. Giving up the pod will be marked Unready and won't get any traffic. |
+| Setting             | Description                                                                                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| initialDelaySeconds | Number of seconds after the container has started before the probes is initiated.                                                                      |
+| periodSeconds       | How often (in seconds) to perform the probe.                                                                                                           |
+| successThreshold    | Minimum consecutive successes for the probe to be considered successful after having failed.                                                           |
+| timeoutSeconds      | Number of seconds after which the probe times out.                                                                                                     |
+| failureThreshold    | When a probe fails, Kubernetes will try this many times before giving up. If it gives up, the pod will be marked Unready and will not receive traffic. |
 
 ## High-Availability
 
@@ -540,7 +539,7 @@ helm template my-release onechart/onechart -f values.yaml
 
 For security reasons, if your application doesn't require root access and writing to the root file system, we recommend you to set `readOnlyRootFilesystem: true` and `runAsNonRoot: true`.
 
-**Example of setting security context for containers**
+### Example of setting security context for containers
 
 ```
 # values.yaml
@@ -549,7 +548,7 @@ securityContext:
   runAsNonRoot: true
 ```
 
-**Example of setting security context for init containers**
+### Example of setting security context for init containers
 
 ```
 # values.yaml

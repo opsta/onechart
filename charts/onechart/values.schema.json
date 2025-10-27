@@ -1074,9 +1074,15 @@
             "title": "Mount an existing configMap as a file",
             "type": "object",
             "properties": {
-              "existingConfigMap": {
+              "name": {
                 "type": "string",
                 "title": "Name",
+                "description": "The name of the volume. Used only to recognize the volumes purpose in the config later on",
+                "default": "data"
+              },
+              "existingConfigMap": {
+                "type": "string",
+                "title": "ConfigMap Name",
                 "description": "The name of the configMap to mount",
                 "default": "data"
               },
@@ -1094,6 +1100,7 @@
               }
             },
             "required": [
+              "name",
               "existingConfigMap",
               "path"
             ]
@@ -1131,9 +1138,15 @@
             "title": "Mount an existing secret as a file",
             "type": "object",
             "properties": {
-              "existingSecret": {
+              "name": {
                 "type": "string",
                 "title": "Name",
+                "description": "The name of the volume. Used only to recognize the volumes purpose in the config later on",
+                "default": "data"
+              },
+              "existingSecret": {
+                "type": "string",
+                "title": "Secret Name",
                 "description": "The name of the secret to mount",
                 "default": "data"
               },
@@ -1151,6 +1164,7 @@
               }
             },
             "required": [
+              "name",
               "existingSecret",
               "path"
             ]
