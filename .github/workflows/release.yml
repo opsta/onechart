@@ -26,45 +26,44 @@ jobs:
       run: |
         tag=${GITHUB_REF/refs\/tags\//}
         tag=${tag#v}
-        echo ::set-output name=tag_version::$tag
+        echo "tag_version=$tag" >> $GITHUB_OUTPUT
 
-    - name: Extract chart version
-      id: chart_version
+    - name: Extract chart versions
+      id: chart_versions
       run: |
-        CHART_VERSION=$(cat charts/onechart/Chart.yaml | grep ^version:)
-        CHART_VERSION=${CHART_VERSION#version: }
-        echo $CHART_VERSION
-        echo ::set-output name=chart_version::$CHART_VERSION
+        ONECHART_VERSION=$(grep '^version:' charts/onechart/Chart.yaml | awk '{print $2}')
+        CRON_JOB_VERSION=$(grep '^version:' charts/cron-job/Chart.yaml | awk '{print $2}')
+        STATIC_SITE_VERSION=$(grep '^version:' charts/static-site/Chart.yaml | awk '{print $2}')
 
-        CHART_VERSION=$(cat charts/cron-job/Chart.yaml | grep ^version:)
-        CHART_VERSION=${CHART_VERSION#version: }
-        echo $CHART_VERSION
-        echo ::set-output name=cron_job_chart_version::$CHART_VERSION
+        echo "onechart_version=$ONECHART_VERSION" >> $GITHUB_OUTPUT
+        echo "cron_job_version=$CRON_JOB_VERSION" >> $GITHUB_OUTPUT
+        echo "static_site_version=$STATIC_SITE_VERSION" >> $GITHUB_OUTPUT
 
-        CHART_VERSION=$(cat charts/static-site/Chart.yaml | grep ^version:)
-        CHART_VERSION=${CHART_VERSION#version: }
-        echo $CHART_VERSION
-        echo ::set-output name=static_site_chart_version::$CHART_VERSION
-
-    - name: Ensure tag and chart version matches
+    - name: Ensure tag and chart versions match
       run: |
-        echo "$TAG_VERSION"
-        echo "$CHART_VERSION"
-        echo "$CRON_JOB_CHART_VERSION"
-        if [ "$TAG_VERSION" != "$CHART_VERSION" ]
-        then
-            echo "Tag version does not match chart version"
+        echo "Tag version: $TAG_VERSION"
+        echo "onechart version: $ONECHART_VERSION"
+        echo "cron-job version: $CRON_JOB_VERSION"
+        echo "static-site version: $STATIC_SITE_VERSION"
+
+        if [ "$TAG_VERSION" != "$ONECHART_VERSION" ]; then
+            echo "::error::Tag version ($TAG_VERSION) does not match onechart version ($ONECHART_VERSION)"
             exit 1
         fi
-        if [ "$TAG_VERSION" != "$CRON_JOB_CHART_VERSION" ]
-                then
-                    echo "Tag version does not match cron-job chart version"
-                    exit 1
-                fi
+        if [ "$TAG_VERSION" != "$CRON_JOB_VERSION" ]; then
+            echo "::error::Tag version ($TAG_VERSION) does not match cron-job version ($CRON_JOB_VERSION)"
+            exit 1
+        fi
+        if [ "$TAG_VERSION" != "$STATIC_SITE_VERSION" ]; then
+            echo "::error::Tag version ($TAG_VERSION) does not match static-site version ($STATIC_SITE_VERSION)"
+            exit 1
+        fi
+        echo "All versions match!"
       env:
         TAG_VERSION: ${{ steps.versioning.outputs.tag_version }}
-        CHART_VERSION: ${{ steps.chart_version.outputs.chart_version }}
-        CRON_JOB_CHART_VERSION: ${{ steps.chart_version.outputs.cron_job_chart_version }}
+        ONECHART_VERSION: ${{ steps.chart_versions.outputs.onechart_version }}
+        CRON_JOB_VERSION: ${{ steps.chart_versions.outputs.cron_job_version }}
+        STATIC_SITE_VERSION: ${{ steps.chart_versions.outputs.static_site_version }}
 
     - name: Create a Release
       uses: elgohr/Github-Release-Action@v5
@@ -84,40 +83,41 @@ jobs:
         git push origin main
       env:
         TAG_VERSION: ${{ steps.versioning.outputs.tag_version }}
-        title: Release ${{ github.ref }}
 
-    - name: Publish to to GHCR
+    - name: Publish to GHCR
       run: |
         echo ${{ secrets.GITHUB_TOKEN }} | helm registry login ghcr.io \
           --username ${{ github.repository_owner }} \
           --password-stdin
-        helm push docs/onechart-${CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository }}
-        helm push docs/cron-job-${CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository }}
-        helm push docs/static-site-${STATIC_SITE_CHART_VERSION}.tgz oci://ghcr.io/${{ github.repository }}
+
+        helm push docs/onechart-${{ env.TAG_VERSION }}.tgz oci://ghcr.io/${{ github.repository_owner }}
+        helm push docs/cron-job-${{ env.TAG_VERSION }}.tgz oci://ghcr.io/${{ github.repository_owner }}
+        helm push docs/static-site-${{ env.TAG_VERSION }}.tgz oci://ghcr.io/${{ github.repository_owner }}
       env:
-        CHART_VERSION: ${{ steps.chart_version.outputs.chart_version }}
-        STATIC_SITE_CHART_VERSION: ${{ steps.chart_version.outputs.static_site_chart_version }}
+        TAG_VERSION: ${{ steps.versioning.outputs.tag_version }}
+
     - name: Preparing the next release version
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "Github Action"
         git checkout main
 
-        without_major_version=${CHART_VERSION#*.}
-        without_patch_version=${without_major_version%.*}
-        increased_minor_version=$(($without_patch_version + 1))
-        major_version=${CHART_VERSION%%.*}
-        increased_version="$major_version.$increased_minor_version.0"
-        echo "The new version will be $increased_version"
+        CURRENT_VERSION=${{ env.TAG_VERSION }}
+        NEW_VERSION=$(echo $CURRENT_VERSION | awk -F. '{printf "%d.%d.0", $1, $2+1}')
 
-        sed -i "s/version: $CHART_VERSION/version: $increased_version/" charts/onechart/Chart.yaml
-        sed -i "s/version: $CHART_VERSION/version: $increased_version/" charts/cron-job/Chart.yaml
-        sed -i "s/version: $CHART_VERSION/version: $increased_version/" charts/static-site/Chart.yaml
-        sed -i "s/--version $CHART_VERSION/--version $increased_version/" README.md
+        echo "Current version: $CURRENT_VERSION"
+        echo "New version will be $NEW_VERSION"
+
+        sed -i "s/^\(version:\s*\)$CURRENT_VERSION/\1$NEW_VERSION/" charts/onechart/Chart.yaml
+        sed -i "s/^\(version:\s*\)$CURRENT_VERSION/\1$NEW_VERSION/" charts/cron-job/Chart.yaml
+        sed -i "s/^\(version:\s*\)$CURRENT_VERSION/\1$NEW_VERSION/" charts/static-site/Chart.yaml
+
+        sed -i "s/$CURRENT_VERSION/$NEW_VERSION/" README.md
+        sed -i "s/$CURRENT_VERSION/$NEW_VERSION/" docs/onechart.md
 
         git status
         git add .
-        git commit -m "The next release version will be $increased_version"
+        git commit -m "Prepare next release version $NEW_VERSION"
         git push origin main
       env:
-        CHART_VERSION: ${{ steps.chart_version.outputs.chart_version }}
+        TAG_VERSION: ${{ steps.versioning.outputs.tag_version }}
