@@ -14,6 +14,10 @@ OneChart is a generic Helm Chart for web applications. The idea is that most Kub
 
 You can also template and install onechart from an OCI repository as follows:
 
+> **Note:** The examples use version `0.77.0`. This will be the unreleased version if you are at the `main` branch.
+
+> You can find the latest released version in the [releases](https://github.com/opsta/onechart/releases) page.
+
 Check the generated Kubernetes yaml:
 
 ```bash

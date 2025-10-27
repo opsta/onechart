@@ -14,8 +14,8 @@ volumes:
   - name: empty
     path: /deleteme2
     emptyDir: true
-  - existingSecret: my-secret
-    name: volume-name
+  - name: volume-name
+    existingSecret: my-secret
     path: /randomPath/app.creds
     subPath: app.creds
 
