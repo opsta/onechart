@@ -6,7 +6,7 @@ A generic Helm chart for your application deployments.
 
 Because no-one can remember the Kubernetes yaml syntax.
 
-https://gimlet.io/docs/reference/onechart-reference
+https://github.com/opsta/onechart/blob/main/docs/onechart.md
 
 ## Getting started
 
