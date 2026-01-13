@@ -6,7 +6,7 @@ A generic Helm chart for your application deployments.
 
 Because no-one can remember the Kubernetes yaml syntax.
 
-https://github.com/opsta/onechart/blob/main/docs/onechart.md
+https://github.com/eldath-ops/eldath-helm-app-onechart/blob/main/docs/onechart.md
 
 ## Getting started
 
@@ -16,12 +16,12 @@ You can also template and install onechart from an OCI repository as follows:
 
 > **Note:** The examples use version `0.77.0`. This will be the unreleased version if you are at the `main` branch.
 
-> You can find the latest released version in the [releases](https://github.com/opsta/onechart/releases) page.
+> You can find the latest released version in the [releases](https://github.com/eldath-ops/eldath-helm-app-onechart/releases) page.
 
 Check the generated Kubernetes yaml:
 
 ```bash
-helm template my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
+helm template my-release oci://ghcr.io/eldath-ops/eldath-helm-app-onechart --version 0.77.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -29,7 +29,7 @@ helm template my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
 Deploy with Helm:
 
 ```bash
-helm install my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
+helm install my-release oci://ghcr.io/eldath-ops/eldath-helm-app-onechart --version 0.77.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -37,7 +37,7 @@ helm install my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
 The example below deploys your application image, sets environment variables and configures the Kubernetes Ingress domain name:
 
 ```bash
-helm template my-release oci://ghcr.io/opsta/onechart --version 0.77.0 -f values.yaml
+helm template my-release oci://ghcr.io/eldath-ops/eldath-helm-app-onechart --version 0.77.0 -f values.yaml
 
 # values.yaml
 image:
@@ -68,10 +68,10 @@ If you are planning to add a new feature to OneChart, please open an issue for i
 
 ### Pull Request Process
 
-* Fork the repository.
-* Create a new branch and make your changes.
-* Open a pull request with detailed commit message and reference issue number if applicable.
-* A maintainer will review your pull request, and help you throughout the process.
+- Fork the repository.
+- Create a new branch and make your changes.
+- Open a pull request with detailed commit message and reference issue number if applicable.
+- A maintainer will review your pull request, and help you throughout the process.
 
 ## Development
 
@@ -87,5 +87,5 @@ For installation, refer to the CI workflow at `.github/workflows/build.yaml`.
 
 ## Release process
 
-* Create a new tag with the format `v<major>.<minor>.<patch>`.
-* Github Actions will be triggered and test, lint, package the Helm chart and push to the OCI repository.
+- Create a new tag with the format `v<major>.<minor>.<patch>`.
+- Github Actions will be triggered and test, lint, package the Helm chart and push to the OCI repository.

@@ -13,7 +13,7 @@ You can also template and install onechart from an OCI repository as follows:
 Check the generated Kubernetes yaml:
 
 ```bash
-helm template my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
+helm template my-release oci://ghcr.io/eldath-ops/eldath-helm-app-onechart --version 0.77.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -21,7 +21,7 @@ helm template my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
 Deploy with Helm:
 
 ```bash
-helm install my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
+helm install my-release oci://ghcr.io/eldath-ops/eldath-helm-app-onechart --version 0.77.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -29,7 +29,7 @@ helm install my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
 The example below deploys your application image, sets environment variables and configures the Kubernetes Ingress domain name:
 
 ```bash
-helm template my-release oci://ghcr.io/opsta/onechart --version 0.77.0 -f values.yaml
+helm template my-release oci://ghcr.io/eldath-ops/eldath-helm-app-onechart --version 0.77.0 -f values.yaml
 
 # values.yaml
 image:
