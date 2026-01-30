@@ -8,7 +8,7 @@ imagePullSecrets:
 securityContext:
   {{- toYaml .Values.podSecurityContext | nindent 2 }}
 {{- if .Values.serviceAccount.create -}}
-serviceAccountName: {{ .Values.serviceAccount.name }}
+serviceAccountName: {{ .Values.serviceAccount.name | quote }}
 {{- end }}
 initContainers:
   {{- range .Values.initContainers }}  
