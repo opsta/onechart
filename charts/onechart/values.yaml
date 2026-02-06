@@ -84,6 +84,14 @@ monitor:
 
 container: {}
 podSpec: {}
-
 # service:
 #   enabled: false
+
+# sharedSecretFiles:
+#   - name: opsta-secret
+#     files:
+#       - mountPath: /etc/conf/config.json
+#         subPath: config.json
+#       - mountPath: /etc/app/template.yaml
+#         subPath: template.yaml
+

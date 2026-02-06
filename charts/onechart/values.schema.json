@@ -11,7 +11,7 @@
         "repository": "nginx",
         "tag": "latest"
       },
-      "imagePullSecrets" : [],
+      "imagePullSecrets": [],
       "replicas": 1,
       "nameOverride": "",
       "fullnameOverride": "",
@@ -130,7 +130,7 @@
         ]
       }
     },
-    "imagePullSecrets" : {
+    "imagePullSecrets": {
       "$id": "#/properties/imagePullSecrets",
       "type": "array",
       "title": "ImagePull Secrets",
@@ -896,6 +896,60 @@
             "required": [
               "name",
               "path"
+            ]
+          }
+        ]
+      }
+    },
+    "sharedSecretFiles": {
+      "$id": "#/properties/sharedSecretFiles",
+      "type": "array",
+      "title": "Shared Secret Files",
+      "description": "Allows mounting multiple files from existing secrets into a container",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/sharedSecretFiles/items",
+        "type": "object",
+        "anyOf": [
+          {
+            "id": "#/properties/sharedSecretFiles/oneOf/0",
+            "title": "sharedSecretFiles",
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "Secret Name",
+                "description": "The name of the existing secret to mount"
+              },
+              "files": {
+                "type": "array",
+                "title": "Files",
+                "description": "List of files to mount from this secret",
+                "default": [],
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "mountPath"
+                  ],
+                  "properties": {
+                    "mountPath": {
+                      "type": "string",
+                      "title": "Mount Path",
+                      "description": "The mount path inside the container"
+                    },
+                    "subPath": {
+                      "type": "string",
+                      "title": "SubPath",
+                      "description": "Optional file inside the secret to mount (mounts entire secret if omitted)"
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "name",
+              "files"
             ]
           }
         ]
