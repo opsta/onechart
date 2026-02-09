@@ -16,10 +16,6 @@ image:
 # vars:
 #   MY_VAR: "value"
 
-serviceAccount:
-  create: false
-  # name: my-service-account
-
 replicas: 1
 
 nameOverride: ""
