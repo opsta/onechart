@@ -14,14 +14,14 @@ OneChart is a generic Helm Chart for web applications. The idea is that most Kub
 
 You can also template and install onechart from an OCI repository as follows:
 
-> **Note:** The examples use version `0.77.0`. This will be the unreleased version if you are at the `main` branch.
+> **Note:** The examples use version `0.78.0`. This will be the unreleased version if you are at the `main` branch.
 
 > You can find the latest released version in the [releases](https://github.com/opsta/onechart/releases) page.
 
 Check the generated Kubernetes yaml:
 
 ```bash
-helm template my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
+helm template my-release oci://ghcr.io/opsta/onechart --version 0.78.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -29,7 +29,7 @@ helm template my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
 Deploy with Helm:
 
 ```bash
-helm install my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
+helm install my-release oci://ghcr.io/opsta/onechart --version 0.78.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -37,7 +37,7 @@ helm install my-release oci://ghcr.io/opsta/onechart --version 0.77.0 \
 The example below deploys your application image, sets environment variables and configures the Kubernetes Ingress domain name:
 
 ```bash
-helm template my-release oci://ghcr.io/opsta/onechart --version 0.77.0 -f values.yaml
+helm template my-release oci://ghcr.io/opsta/onechart --version 0.78.0 -f values.yaml
 
 # values.yaml
 image:
