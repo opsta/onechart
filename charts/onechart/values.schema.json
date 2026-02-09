@@ -1230,7 +1230,7 @@
       "$id": "#/properties/serviceAccount",
       "type": "string",
       "title": "The name of service account",
-      "description": "Name of the Kubernetes ServiceAccount to associate with this workload. If not specified, the chart will automatically create one.",
+      "description": "Name of the Kubernetes ServiceAccount to associate with this workload.It only creates one if a name is specified.",
       "default": "",
       "examples": []
     }
