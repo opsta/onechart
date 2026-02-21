@@ -1,3 +1,3 @@
 {{- if .Values.extraDeploy }}
-{{ .Values.extraDeploy }}
+{{ tpl .Values.extraDeploy . | nindent 0 }}
 {{- end }}
