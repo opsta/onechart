@@ -30,3 +30,31 @@ probe:
 
 podSpec:
   hostNetwork: true
+
+cnpg:
+  enabled: false
+
+  cluster:
+    instances: 3
+    storage:
+      size: 5Gi
+      storageClass: external-nfs
+    walStorage:
+      size: 2Gi
+      storageClass: external-nfs
+
+  postgresAuth:
+    username: 
+    password: 
+
+  backup:
+    retentionPolicy: "7d"
+    barmanObjectStore:
+      endpointURL: https://seaweedfs-admin.mea-poc.opsta.in.th/buckets/
+      s3Credentials:
+        accessKeyValue: 
+        secretKeyValue: 
+  bootstrap:
+    initdb: 
+      database: cnpg
+      owner: cnpg

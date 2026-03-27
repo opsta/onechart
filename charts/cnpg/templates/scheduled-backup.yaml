@@ -1,0 +1,13 @@
+{{- if and .Values.enabled .Values.scheduledBackup.enabled }}
+apiVersion: postgresql.cnpg.io/v1
+kind: ScheduledBackup
+metadata:
+  name: {{ printf "%s-scheduled-backup" .Release.Name | trunc 63 | trimSuffix "-" | quote }}
+spec:
+  schedule: {{ .Values.scheduledBackup.schedule | quote }}
+  backupOwnerReference: {{ .Values.scheduledBackup.backupOwnerReference | quote }}
+  cluster:
+    name: {{ printf "%s-cnpg" .Release.Name | trunc 63 | trimSuffix "-" | quote }}
+  immediate: {{ .Values.scheduledBackup.immediate }}
+{{- end }}
+

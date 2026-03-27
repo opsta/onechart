@@ -1,0 +1,69 @@
+{{- if .Values.enabled }}
+#{{- $cnpg := .Values.cnpg -}}
+{{- $backup := .Values.backup -}}
+{{- $bos := $backup.barmanObjectStore -}}
+{{- $s3 := $bos.s3Credentials -}}
+{{- $defaultS3Secret := printf "%s-cnpg-s3-creds" .Release.Name | trunc 63 | trimSuffix "-" -}}
+
+
+{{- $s3SecretName := $defaultS3Secret -}}
+
+{{- if and $backup.enabled (not $s3SecretName) -}}
+{{- fail "backup.enabled=true but S3 secret name resolved empty (unexpected)" -}}
+{{ end }}
+
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: {{ printf "%s-cnpg" .Release.Name | trunc 63 | trimSuffix "-" | quote }}
+spec:
+  imageName: {{ .Values.cluster.imageName | quote }}
+  instances: {{ .Values.cluster.instances }}
+
+  {{- if .Values.superuser.enabled }}
+  enableSuperuserAccess: true
+  superuserSecret:
+    name: {{ printf "%s-cnpg-superuser-secret" .Release.Name | trunc 63 | trimSuffix "-" | quote }}
+  {{ end }}
+
+  {{- with .Values.cluster.resources }}
+  resources:
+    {{- toYaml . | nindent 4 }}
+  {{ end }}
+
+  storage:
+    size: {{ .Values.cluster.storage.size | quote }}
+    storageClass: {{ .Values.cluster.storage.storageClass | quote }}
+
+  walStorage:
+    size: {{ .Values.cluster.walStorage.size | quote }}
+    storageClass: {{ .Values.cluster.walStorage.storageClass | quote }}
+
+  {{- if $backup.enabled }}
+  backup:
+    retentionPolicy: {{ $backup.retentionPolicy | quote }}
+    barmanObjectStore:
+      serverName: {{ printf "%s-cnpg-backup" .Release.Name | trunc 63 | trimSuffix "-" | quote }}
+      destinationPath: {{ $bos.destinationPath | quote }}
+      endpointURL: {{ $bos.endpointURL | quote }}
+      s3Credentials:
+        accessKeyId:
+          name: {{ $s3SecretName | quote }}
+          key: {{ default "S3_ACCESS_KEY" $s3.accessKeyKey | quote }}
+        secretAccessKey:
+          name: {{ $s3SecretName | quote }}
+          key: {{ default "S3_SECRET_KEY" $s3.secretKeyKey | quote }}
+      data:
+        compression: {{ $bos.compression.data | quote }}
+      wal:
+        compression: {{ $bos.compression.wal | quote }}
+  {{ end }}
+
+  {{- if .Values.bootstrap.enabled }}
+  bootstrap:
+    initdb:
+      {{- toYaml .Values.bootstrap.initdb | nindent 6 }}
+      secret:
+        name: {{ printf "%s-cnpg-app-creds" .Release.Name | trunc 63 | trimSuffix "-" | quote }}
+  {{ end }}
+{{ end }}

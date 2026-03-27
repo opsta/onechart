@@ -1,0 +1,53 @@
+enabled: true
+
+superuser:
+  enabled: true
+
+cluster:
+  imageName: ghcr.io/cloudnative-pg/postgresql:16.8-13-bullseye
+  instances: 3
+  storage:
+    size: 5Gi
+    storageClass: standard
+  walStorage:
+    size: 2Gi
+    storageClass: standard
+  resources:
+    requests:
+      cpu: "500m"
+      memory: "1Gi"
+    limits:
+      cpu: "2"
+      memory: "4Gi"
+
+postgresAuth:
+  create: true
+  username: cnpg
+  password: P@ssw0rd123
+
+backup:
+  enabled: true
+  retentionPolicy: "7d"
+  barmanObjectStore:
+    destinationPath: s3://postgres-backups/
+    endpointURL: https://opsta.in.th/buckets/
+    s3Credentials:
+      create: true
+      accessKeyValue: accesskey
+      secretKeyValue: secretkey
+    compression:
+      data: gzip
+      wal: gzip
+
+scheduledBackup:
+  enabled: true
+  schedule: "0 0 * * *"
+  backupOwnerReference: self
+  immediate: true
+
+bootstrap:
+  enabled: true
+  initdb: 
+    database: cnpg
+    owner: cnpg
+
