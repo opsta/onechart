@@ -32,7 +32,7 @@ backup:
     destinationPath: s3://postgres-backups/
     endpointURL: https://opsta.in.th/buckets/
     s3Credentials:
-      create: true
+      create: false
       accessKeyValue: 
       secretKeyValue: 
     compression:
