@@ -35,15 +35,15 @@ volumeMounts:
     readOnly: true
 {{- end }}
 {{- range .Values.sharedSecretFiles }}
-  {{- $secretName := .name }}
-  {{- range .files }}
-    - name: {{ $secretName }}
-      mountPath: {{ .mountPath }}
-      {{- if .subPath}}
-      subPath: {{ .subPath }}
-      {{- end }} 
-      readOnly: true
-  {{- end }}
+{{- $secretName := .name }}
+{{- range .files }}
+  - name: {{ $secretName }}
+    mountPath: {{ .mountPath }}
+{{- if .subPath }}
+    subPath: {{ .subPath }}
+{{- end }}
+    readOnly: true
+{{- end }}
 {{- end }}
 {{- end }}
 {{- end }}
