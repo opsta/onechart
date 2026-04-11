@@ -2,21 +2,21 @@ apiVersion: v1
 entries:
   cron-job:
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.92165377+07:00"
+    created: "2026-04-11T08:06:56.033327269Z"
     dependencies:
     - name: common
       repository: file://../common
       version: 0.10.0
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
-    digest: 3fb3cf42cffc24ee9043106700b8b431514cb5f5f720431fd3c7e42bdca36ee5
+    digest: 3f69294da80c18aa729378e7587e4b65e58b5d79dad1843284a786e78a7fc186
     name: cron-job
     type: application
     urls:
-    - cron-job-0.80.0.tgz
+    - https://chart.onechart.dev/cron-job-0.80.0.tgz
     version: 0.80.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.919698474+07:00"
+    created: "2026-04-11T08:06:56.032866269Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -27,10 +27,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.79.0.tgz
+    - https://chart.onechart.dev/cron-job-0.79.0.tgz
     version: 0.79.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.918467173+07:00"
+    created: "2026-04-11T08:06:56.032413835Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -41,10 +41,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.78.0.tgz
+    - https://chart.onechart.dev/cron-job-0.78.0.tgz
     version: 0.78.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.917375415+07:00"
+    created: "2026-04-11T08:06:56.031948958Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -55,10 +55,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.77.0.tgz
+    - https://chart.onechart.dev/cron-job-0.77.0.tgz
     version: 0.77.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.915961149+07:00"
+    created: "2026-04-11T08:06:56.031476276Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -69,10 +69,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.76.0.tgz
+    - https://chart.onechart.dev/cron-job-0.76.0.tgz
     version: 0.76.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.914476471+07:00"
+    created: "2026-04-11T08:06:56.030363949Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -83,10 +83,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.75.0.tgz
+    - https://chart.onechart.dev/cron-job-0.75.0.tgz
     version: 0.75.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.912857429+07:00"
+    created: "2026-04-11T08:06:56.029758009Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -97,10 +97,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.74.0.tgz
+    - https://chart.onechart.dev/cron-job-0.74.0.tgz
     version: 0.74.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.911562638+07:00"
+    created: "2026-04-11T08:06:56.029316666Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -111,10 +111,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.73.0.tgz
+    - https://chart.onechart.dev/cron-job-0.73.0.tgz
     version: 0.73.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.910489986+07:00"
+    created: "2026-04-11T08:06:56.028831581Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -125,10 +125,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.72.0.tgz
+    - https://chart.onechart.dev/cron-job-0.72.0.tgz
     version: 0.72.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.909528043+07:00"
+    created: "2026-04-11T08:06:56.028415375Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -139,10 +139,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.71.0.tgz
+    - https://chart.onechart.dev/cron-job-0.71.0.tgz
     version: 0.71.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.908424303+07:00"
+    created: "2026-04-11T08:06:56.02796778Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -153,10 +153,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.70.0.tgz
+    - https://chart.onechart.dev/cron-job-0.70.0.tgz
     version: 0.70.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.906688992+07:00"
+    created: "2026-04-11T08:06:56.027552775Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -167,10 +167,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.69.0.tgz
+    - https://chart.onechart.dev/cron-job-0.69.0.tgz
     version: 0.69.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.906086706+07:00"
+    created: "2026-04-11T08:06:56.027103468Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -181,10 +181,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.68.0.tgz
+    - https://chart.onechart.dev/cron-job-0.68.0.tgz
     version: 0.68.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.905307668+07:00"
+    created: "2026-04-11T08:06:56.026679918Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -195,10 +195,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.67.0.tgz
+    - https://chart.onechart.dev/cron-job-0.67.0.tgz
     version: 0.67.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.904229345+07:00"
+    created: "2026-04-11T08:06:56.026251418Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -209,10 +209,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.66.0.tgz
+    - https://chart.onechart.dev/cron-job-0.66.0.tgz
     version: 0.66.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.903137788+07:00"
+    created: "2026-04-11T08:06:56.025743571Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -223,10 +223,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.65.0.tgz
+    - https://chart.onechart.dev/cron-job-0.65.0.tgz
     version: 0.65.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.901870078+07:00"
+    created: "2026-04-11T08:06:56.025288542Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -237,10 +237,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.65.0-rc.1.tgz
+    - https://chart.onechart.dev/cron-job-0.65.0-rc.1.tgz
     version: 0.65.0-rc.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.900580277+07:00"
+    created: "2026-04-11T08:06:56.024326814Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -251,10 +251,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.64.0.tgz
+    - https://chart.onechart.dev/cron-job-0.64.0.tgz
     version: 0.64.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.899202229+07:00"
+    created: "2026-04-11T08:06:56.023719872Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -265,10 +265,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.64.0-rc.3.tgz
+    - https://chart.onechart.dev/cron-job-0.64.0-rc.3.tgz
     version: 0.64.0-rc.3
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.897836936+07:00"
+    created: "2026-04-11T08:06:56.02331137Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -279,10 +279,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.64.0-rc.2.tgz
+    - https://chart.onechart.dev/cron-job-0.64.0-rc.2.tgz
     version: 0.64.0-rc.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.896793829+07:00"
+    created: "2026-04-11T08:06:56.022896326Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -293,10 +293,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.63.0.tgz
+    - https://chart.onechart.dev/cron-job-0.63.0.tgz
     version: 0.63.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.895360778+07:00"
+    created: "2026-04-11T08:06:56.022479689Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -307,10 +307,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.63.0-rc.3.tgz
+    - https://chart.onechart.dev/cron-job-0.63.0-rc.3.tgz
     version: 0.63.0-rc.3
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.8941999+07:00"
+    created: "2026-04-11T08:06:56.022057341Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -321,10 +321,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.63.0-rc.2.tgz
+    - https://chart.onechart.dev/cron-job-0.63.0-rc.2.tgz
     version: 0.63.0-rc.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.892416148+07:00"
+    created: "2026-04-11T08:06:56.021663075Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -335,10 +335,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.63.0-rc.1.tgz
+    - https://chart.onechart.dev/cron-job-0.63.0-rc.1.tgz
     version: 0.63.0-rc.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.891822919+07:00"
+    created: "2026-04-11T08:06:56.021250366Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -349,10 +349,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.62.0.tgz
+    - https://chart.onechart.dev/cron-job-0.62.0.tgz
     version: 0.62.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.891261812+07:00"
+    created: "2026-04-11T08:06:56.020786731Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -363,10 +363,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.62.0-rc.3.tgz
+    - https://chart.onechart.dev/cron-job-0.62.0-rc.3.tgz
     version: 0.62.0-rc.3
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.890780935+07:00"
+    created: "2026-04-11T08:06:56.020354264Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -377,10 +377,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.61.0.tgz
+    - https://chart.onechart.dev/cron-job-0.61.0.tgz
     version: 0.61.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.890287525+07:00"
+    created: "2026-04-11T08:06:56.019896651Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -391,10 +391,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.60.0.tgz
+    - https://chart.onechart.dev/cron-job-0.60.0.tgz
     version: 0.60.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.889883744+07:00"
+    created: "2026-04-11T08:06:56.019478581Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -405,10 +405,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.59.0.tgz
+    - https://chart.onechart.dev/cron-job-0.59.0.tgz
     version: 0.59.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.889485674+07:00"
+    created: "2026-04-11T08:06:56.018388111Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -419,10 +419,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.58.0.tgz
+    - https://chart.onechart.dev/cron-job-0.58.0.tgz
     version: 0.58.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.889036437+07:00"
+    created: "2026-04-11T08:06:56.017961936Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -433,10 +433,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.57.0.tgz
+    - https://chart.onechart.dev/cron-job-0.57.0.tgz
     version: 0.57.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.88864014+07:00"
+    created: "2026-04-11T08:06:56.017581316Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -447,10 +447,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.56.0.tgz
+    - https://chart.onechart.dev/cron-job-0.56.0.tgz
     version: 0.56.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.88822622+07:00"
+    created: "2026-04-11T08:06:56.017180278Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -461,10 +461,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.55.0.tgz
+    - https://chart.onechart.dev/cron-job-0.55.0.tgz
     version: 0.55.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.887824853+07:00"
+    created: "2026-04-11T08:06:56.016775984Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -475,10 +475,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.54.0.tgz
+    - https://chart.onechart.dev/cron-job-0.54.0.tgz
     version: 0.54.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.886655188+07:00"
+    created: "2026-04-11T08:06:56.016353867Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -489,10 +489,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.53.0.tgz
+    - https://chart.onechart.dev/cron-job-0.53.0.tgz
     version: 0.53.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.88570101+07:00"
+    created: "2026-04-11T08:06:56.015911541Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -503,10 +503,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.52.0.tgz
+    - https://chart.onechart.dev/cron-job-0.52.0.tgz
     version: 0.52.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.883179176+07:00"
+    created: "2026-04-11T08:06:56.01551945Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -517,10 +517,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.51.0.tgz
+    - https://chart.onechart.dev/cron-job-0.51.0.tgz
     version: 0.51.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.882037965+07:00"
+    created: "2026-04-11T08:06:56.01507955Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -531,10 +531,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.50.0.tgz
+    - https://chart.onechart.dev/cron-job-0.50.0.tgz
     version: 0.50.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.881037349+07:00"
+    created: "2026-04-11T08:06:56.014664486Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -545,10 +545,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.49.0.tgz
+    - https://chart.onechart.dev/cron-job-0.49.0.tgz
     version: 0.49.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.879940652+07:00"
+    created: "2026-04-11T08:06:56.014224545Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -559,10 +559,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.48.0.tgz
+    - https://chart.onechart.dev/cron-job-0.48.0.tgz
     version: 0.48.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.878757482+07:00"
+    created: "2026-04-11T08:06:56.01377718Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -573,10 +573,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.47.0.tgz
+    - https://chart.onechart.dev/cron-job-0.47.0.tgz
     version: 0.47.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.877567508+07:00"
+    created: "2026-04-11T08:06:56.01308245Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -587,10 +587,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.46.0.tgz
+    - https://chart.onechart.dev/cron-job-0.46.0.tgz
     version: 0.46.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.876646943+07:00"
+    created: "2026-04-11T08:06:56.012236222Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -601,10 +601,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.45.0.tgz
+    - https://chart.onechart.dev/cron-job-0.45.0.tgz
     version: 0.45.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.875394973+07:00"
+    created: "2026-04-11T08:06:56.011796211Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -615,10 +615,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.44.0.tgz
+    - https://chart.onechart.dev/cron-job-0.44.0.tgz
     version: 0.44.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.874132203+07:00"
+    created: "2026-04-11T08:06:56.011190681Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -629,10 +629,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.43.0.tgz
+    - https://chart.onechart.dev/cron-job-0.43.0.tgz
     version: 0.43.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.873056906+07:00"
+    created: "2026-04-11T08:06:56.010766681Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -643,10 +643,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.42.0.tgz
+    - https://chart.onechart.dev/cron-job-0.42.0.tgz
     version: 0.42.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.871872333+07:00"
+    created: "2026-04-11T08:06:56.010359231Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -657,10 +657,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.41.0.tgz
+    - https://chart.onechart.dev/cron-job-0.41.0.tgz
     version: 0.41.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.870725962+07:00"
+    created: "2026-04-11T08:06:56.009950919Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -671,10 +671,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.40.0.tgz
+    - https://chart.onechart.dev/cron-job-0.40.0.tgz
     version: 0.40.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.869498439+07:00"
+    created: "2026-04-11T08:06:56.009552987Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -685,10 +685,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.39.0.tgz
+    - https://chart.onechart.dev/cron-job-0.39.0.tgz
     version: 0.39.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.867847236+07:00"
+    created: "2026-04-11T08:06:56.009105562Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -699,10 +699,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.38.0.tgz
+    - https://chart.onechart.dev/cron-job-0.38.0.tgz
     version: 0.38.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.867424459+07:00"
+    created: "2026-04-11T08:06:56.008687723Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -713,10 +713,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.37.0.tgz
+    - https://chart.onechart.dev/cron-job-0.37.0.tgz
     version: 0.37.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.866952199+07:00"
+    created: "2026-04-11T08:06:56.008260516Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -727,10 +727,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.36.0.tgz
+    - https://chart.onechart.dev/cron-job-0.36.0.tgz
     version: 0.36.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.866467285+07:00"
+    created: "2026-04-11T08:06:56.007815697Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -741,10 +741,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.35.0.tgz
+    - https://chart.onechart.dev/cron-job-0.35.0.tgz
     version: 0.35.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.866037765+07:00"
+    created: "2026-04-11T08:06:56.007335741Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -755,10 +755,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.34.0.tgz
+    - https://chart.onechart.dev/cron-job-0.34.0.tgz
     version: 0.34.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.865574632+07:00"
+    created: "2026-04-11T08:06:56.006274105Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -769,10 +769,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.33.0.tgz
+    - https://chart.onechart.dev/cron-job-0.33.0.tgz
     version: 0.33.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.865127329+07:00"
+    created: "2026-04-11T08:06:56.005712137Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -783,10 +783,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.32.0.tgz
+    - https://chart.onechart.dev/cron-job-0.32.0.tgz
     version: 0.32.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.864672652+07:00"
+    created: "2026-04-11T08:06:56.005325265Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -797,10 +797,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.2.2.tgz
+    - https://chart.onechart.dev/cron-job-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.86423098+07:00"
+    created: "2026-04-11T08:06:56.004876458Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -811,10 +811,10 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.2.1.tgz
+    - https://chart.onechart.dev/cron-job-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.863761074+07:00"
+    created: "2026-04-11T08:06:56.004433702Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -825,92 +825,92 @@ entries:
     name: cron-job
     type: application
     urls:
-    - cron-job-0.2.0.tgz
+    - https://chart.onechart.dev/cron-job-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.863274437+07:00"
+    created: "2026-04-11T08:06:56.003970168Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 02a23d8b4177290a518ee5de6a5e1f557f7409f94b2e04f23fedea193464188f
     name: cron-job
     type: application
     urls:
-    - cron-job-0.1.2.tgz
+    - https://chart.onechart.dev/cron-job-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.863038562+07:00"
+    created: "2026-04-11T08:06:56.003755868Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: afab9ba533a4686827b54b0dad64f5bbf76f7fbc075e35fb1034689db9ab9dda
     name: cron-job
     type: application
     urls:
-    - cron-job-0.1.1.tgz
+    - https://chart.onechart.dev/cron-job-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.86277214+07:00"
+    created: "2026-04-11T08:06:56.003538012Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 01f9fa40c1c4085d7688474ab00c9e9d21bd1d0793db6b75f2edda0e18456282
     name: cron-job
     type: application
     urls:
-    - cron-job-0.1.0.tgz
+    - https://chart.onechart.dev/cron-job-0.1.0.tgz
     version: 0.1.0
   namespaces:
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.92500141+07:00"
+    created: "2026-04-11T08:06:56.034129896Z"
     description: Chart to create namespaces and their defaults
     digest: 6253b1657537baa94e4a134c88131bf16b93059176d48e7ccec8e6a351740386
     name: namespaces
     type: application
     urls:
-    - namespaces-0.3.0.tgz
+    - https://chart.onechart.dev/namespaces-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.92470419+07:00"
+    created: "2026-04-11T08:06:56.03399788Z"
     description: Chart to create namespaces and their defaults
     digest: a8e28dab9dc1a0044e75fbf8dd6d89c760c6fe9caa76bf16076cf5ecb311e808
     name: namespaces
     type: application
     urls:
-    - namespaces-0.2.1.tgz
+    - https://chart.onechart.dev/namespaces-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.923895816+07:00"
+    created: "2026-04-11T08:06:56.033755307Z"
     description: Chart to create namespaces and their defaults
     digest: 9539bfd2fde6d8f2b36ffec99c8a3a3eb7887462e98ee740b0ae0ea2b16b96b6
     name: namespaces
     type: application
     urls:
-    - namespaces-0.2.0.tgz
+    - https://chart.onechart.dev/namespaces-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.922518139+07:00"
+    created: "2026-04-11T08:06:56.033484963Z"
     description: Chart to create namespaces and their defaults
     digest: 88b06d78a9d1bda6f2ee15b1fad7f25399ac25c2320fb9a8dfa1a4fd14afdf6e
     name: namespaces
     type: application
     urls:
-    - namespaces-0.1.0.tgz
+    - https://chart.onechart.dev/namespaces-0.1.0.tgz
     version: 0.1.0
   onechart:
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.041670598+07:00"
+    created: "2026-04-11T08:06:56.093736646Z"
     dependencies:
     - name: common
       repository: file://../common
       version: 0.10.0
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
-    digest: cd808cd41f5992457ef0843f81907d56692cdf481ffe5a2b839ef7ecafcfb0b0
+    digest: 71bc4f22a6428b1c983ba6d38929b0df2c729238aebac60bccc6a43c9e545885
     name: onechart
     type: application
     urls:
-    - onechart-0.80.0.tgz
+    - https://chart.onechart.dev/onechart-0.80.0.tgz
     version: 0.80.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.040118242+07:00"
+    created: "2026-04-11T08:06:56.092166908Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -921,10 +921,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.79.0.tgz
+    - https://chart.onechart.dev/onechart-0.79.0.tgz
     version: 0.79.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.039453849+07:00"
+    created: "2026-04-11T08:06:56.091512697Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -935,10 +935,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.78.0.tgz
+    - https://chart.onechart.dev/onechart-0.78.0.tgz
     version: 0.78.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.038782294+07:00"
+    created: "2026-04-11T08:06:56.090839171Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -949,10 +949,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.77.0.tgz
+    - https://chart.onechart.dev/onechart-0.77.0.tgz
     version: 0.77.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.038099026+07:00"
+    created: "2026-04-11T08:06:56.090123176Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -963,10 +963,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.76.0.tgz
+    - https://chart.onechart.dev/onechart-0.76.0.tgz
     version: 0.76.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.037437338+07:00"
+    created: "2026-04-11T08:06:56.089471941Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -977,10 +977,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.75.0.tgz
+    - https://chart.onechart.dev/onechart-0.75.0.tgz
     version: 0.75.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.036774409+07:00"
+    created: "2026-04-11T08:06:56.088186546Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -991,10 +991,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.74.0.tgz
+    - https://chart.onechart.dev/onechart-0.74.0.tgz
     version: 0.74.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.036042319+07:00"
+    created: "2026-04-11T08:06:56.08736322Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1005,10 +1005,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.73.0.tgz
+    - https://chart.onechart.dev/onechart-0.73.0.tgz
     version: 0.73.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.033561102+07:00"
+    created: "2026-04-11T08:06:56.086701516Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1019,10 +1019,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.72.0.tgz
+    - https://chart.onechart.dev/onechart-0.72.0.tgz
     version: 0.72.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.032045405+07:00"
+    created: "2026-04-11T08:06:56.086046254Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1033,10 +1033,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.71.0.tgz
+    - https://chart.onechart.dev/onechart-0.71.0.tgz
     version: 0.71.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.030421063+07:00"
+    created: "2026-04-11T08:06:56.085413043Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1047,10 +1047,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.70.0.tgz
+    - https://chart.onechart.dev/onechart-0.70.0.tgz
     version: 0.70.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.02760773+07:00"
+    created: "2026-04-11T08:06:56.084250915Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1061,10 +1061,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.69.0.tgz
+    - https://chart.onechart.dev/onechart-0.69.0.tgz
     version: 0.69.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.02566642+07:00"
+    created: "2026-04-11T08:06:56.083568232Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1075,10 +1075,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.68.0.tgz
+    - https://chart.onechart.dev/onechart-0.68.0.tgz
     version: 0.68.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.023768663+07:00"
+    created: "2026-04-11T08:06:56.082421981Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1089,10 +1089,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.67.0.tgz
+    - https://chart.onechart.dev/onechart-0.67.0.tgz
     version: 0.67.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.02211723+07:00"
+    created: "2026-04-11T08:06:56.081471238Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1103,10 +1103,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.66.0.tgz
+    - https://chart.onechart.dev/onechart-0.66.0.tgz
     version: 0.66.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.020646097+07:00"
+    created: "2026-04-11T08:06:56.080764088Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1117,10 +1117,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.65.0.tgz
+    - https://chart.onechart.dev/onechart-0.65.0.tgz
     version: 0.65.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.018629606+07:00"
+    created: "2026-04-11T08:06:56.080104017Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1131,10 +1131,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.65.0-rc.1.tgz
+    - https://chart.onechart.dev/onechart-0.65.0-rc.1.tgz
     version: 0.65.0-rc.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.015624572+07:00"
+    created: "2026-04-11T08:06:56.079496114Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1145,10 +1145,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.64.0.tgz
+    - https://chart.onechart.dev/onechart-0.64.0.tgz
     version: 0.64.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.014153138+07:00"
+    created: "2026-04-11T08:06:56.078825152Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1159,10 +1159,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.64.0-rc.3.tgz
+    - https://chart.onechart.dev/onechart-0.64.0-rc.3.tgz
     version: 0.64.0-rc.3
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.012655956+07:00"
+    created: "2026-04-11T08:06:56.078082276Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1173,10 +1173,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.64.0-rc.2.tgz
+    - https://chart.onechart.dev/onechart-0.64.0-rc.2.tgz
     version: 0.64.0-rc.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.011048185+07:00"
+    created: "2026-04-11T08:06:56.077417897Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1187,10 +1187,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.63.0.tgz
+    - https://chart.onechart.dev/onechart-0.63.0.tgz
     version: 0.63.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.009235999+07:00"
+    created: "2026-04-11T08:06:56.075905789Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1201,10 +1201,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.63.0-rc.3.tgz
+    - https://chart.onechart.dev/onechart-0.63.0-rc.3.tgz
     version: 0.63.0-rc.3
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.007351848+07:00"
+    created: "2026-04-11T08:06:56.07526822Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1215,10 +1215,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.63.0-rc.2.tgz
+    - https://chart.onechart.dev/onechart-0.63.0-rc.2.tgz
     version: 0.63.0-rc.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.005741663+07:00"
+    created: "2026-04-11T08:06:56.074631673Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1229,10 +1229,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.63.0-rc.1.tgz
+    - https://chart.onechart.dev/onechart-0.63.0-rc.1.tgz
     version: 0.63.0-rc.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.003818538+07:00"
+    created: "2026-04-11T08:06:56.073971662Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1243,10 +1243,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.62.0.tgz
+    - https://chart.onechart.dev/onechart-0.62.0.tgz
     version: 0.62.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.00210094+07:00"
+    created: "2026-04-11T08:06:56.073358839Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1257,10 +1257,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.62.0-rc.3.tgz
+    - https://chart.onechart.dev/onechart-0.62.0-rc.3.tgz
     version: 0.62.0-rc.3
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.99958631+07:00"
+    created: "2026-04-11T08:06:56.072714146Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1271,10 +1271,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.61.0.tgz
+    - https://chart.onechart.dev/onechart-0.61.0.tgz
     version: 0.61.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.997499356+07:00"
+    created: "2026-04-11T08:06:56.072003591Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1285,10 +1285,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.60.0.tgz
+    - https://chart.onechart.dev/onechart-0.60.0.tgz
     version: 0.60.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.994379115+07:00"
+    created: "2026-04-11T08:06:56.070250721Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1299,10 +1299,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.59.0.tgz
+    - https://chart.onechart.dev/onechart-0.59.0.tgz
     version: 0.59.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.992609229+07:00"
+    created: "2026-04-11T08:06:56.06961766Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1313,10 +1313,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.58.0.tgz
+    - https://chart.onechart.dev/onechart-0.58.0.tgz
     version: 0.58.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.990873106+07:00"
+    created: "2026-04-11T08:06:56.068993326Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1327,10 +1327,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.57.0.tgz
+    - https://chart.onechart.dev/onechart-0.57.0.tgz
     version: 0.57.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.989526357+07:00"
+    created: "2026-04-11T08:06:56.068415989Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1341,10 +1341,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.56.0.tgz
+    - https://chart.onechart.dev/onechart-0.56.0.tgz
     version: 0.56.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.987951669+07:00"
+    created: "2026-04-11T08:06:56.067816741Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1355,10 +1355,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.55.0.tgz
+    - https://chart.onechart.dev/onechart-0.55.0.tgz
     version: 0.55.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.986231376+07:00"
+    created: "2026-04-11T08:06:56.067233232Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1369,10 +1369,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.54.0.tgz
+    - https://chart.onechart.dev/onechart-0.54.0.tgz
     version: 0.54.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.984411686+07:00"
+    created: "2026-04-11T08:06:56.06662644Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1383,10 +1383,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.53.0.tgz
+    - https://chart.onechart.dev/onechart-0.53.0.tgz
     version: 0.53.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.982665315+07:00"
+    created: "2026-04-11T08:06:56.065991095Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1397,10 +1397,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.52.0.tgz
+    - https://chart.onechart.dev/onechart-0.52.0.tgz
     version: 0.52.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.980746638+07:00"
+    created: "2026-04-11T08:06:56.065185593Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1411,10 +1411,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.51.0.tgz
+    - https://chart.onechart.dev/onechart-0.51.0.tgz
     version: 0.51.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.979038398+07:00"
+    created: "2026-04-11T08:06:56.063961781Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1425,10 +1425,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.50.0.tgz
+    - https://chart.onechart.dev/onechart-0.50.0.tgz
     version: 0.50.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.977972188+07:00"
+    created: "2026-04-11T08:06:56.062938332Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1439,10 +1439,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.49.0.tgz
+    - https://chart.onechart.dev/onechart-0.49.0.tgz
     version: 0.49.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.977378649+07:00"
+    created: "2026-04-11T08:06:56.062361666Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1453,10 +1453,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.48.0.tgz
+    - https://chart.onechart.dev/onechart-0.48.0.tgz
     version: 0.48.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.976774561+07:00"
+    created: "2026-04-11T08:06:56.061714028Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1467,10 +1467,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.47.0.tgz
+    - https://chart.onechart.dev/onechart-0.47.0.tgz
     version: 0.47.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.976134174+07:00"
+    created: "2026-04-11T08:06:56.0611039Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1481,10 +1481,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.46.0.tgz
+    - https://chart.onechart.dev/onechart-0.46.0.tgz
     version: 0.46.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.975539994+07:00"
+    created: "2026-04-11T08:06:56.060538135Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1495,10 +1495,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.45.0.tgz
+    - https://chart.onechart.dev/onechart-0.45.0.tgz
     version: 0.45.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.974932649+07:00"
+    created: "2026-04-11T08:06:56.05991369Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1509,10 +1509,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.44.0.tgz
+    - https://chart.onechart.dev/onechart-0.44.0.tgz
     version: 0.44.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.974344741+07:00"
+    created: "2026-04-11T08:06:56.059303412Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1523,10 +1523,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.43.0.tgz
+    - https://chart.onechart.dev/onechart-0.43.0.tgz
     version: 0.43.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.97375552+07:00"
+    created: "2026-04-11T08:06:56.05790148Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1537,10 +1537,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.42.0.tgz
+    - https://chart.onechart.dev/onechart-0.42.0.tgz
     version: 0.42.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.973168343+07:00"
+    created: "2026-04-11T08:06:56.057356353Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1551,10 +1551,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.41.0.tgz
+    - https://chart.onechart.dev/onechart-0.41.0.tgz
     version: 0.41.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.972566889+07:00"
+    created: "2026-04-11T08:06:56.056780779Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1565,10 +1565,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.40.0.tgz
+    - https://chart.onechart.dev/onechart-0.40.0.tgz
     version: 0.40.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.970952687+07:00"
+    created: "2026-04-11T08:06:56.056018838Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1579,10 +1579,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.39.0.tgz
+    - https://chart.onechart.dev/onechart-0.39.0.tgz
     version: 0.39.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.970224674+07:00"
+    created: "2026-04-11T08:06:56.055463101Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1593,10 +1593,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.38.0.tgz
+    - https://chart.onechart.dev/onechart-0.38.0.tgz
     version: 0.38.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.969574419+07:00"
+    created: "2026-04-11T08:06:56.054912104Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1607,10 +1607,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.37.0.tgz
+    - https://chart.onechart.dev/onechart-0.37.0.tgz
     version: 0.37.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.968814426+07:00"
+    created: "2026-04-11T08:06:56.054378368Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1621,10 +1621,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.36.0.tgz
+    - https://chart.onechart.dev/onechart-0.36.0.tgz
     version: 0.36.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.966957285+07:00"
+    created: "2026-04-11T08:06:56.053798336Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1635,10 +1635,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.35.0.tgz
+    - https://chart.onechart.dev/onechart-0.35.0.tgz
     version: 0.35.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.965382938+07:00"
+    created: "2026-04-11T08:06:56.053198377Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1649,10 +1649,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.34.0.tgz
+    - https://chart.onechart.dev/onechart-0.34.0.tgz
     version: 0.34.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.963751653+07:00"
+    created: "2026-04-11T08:06:56.05189367Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1663,10 +1663,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.33.0.tgz
+    - https://chart.onechart.dev/onechart-0.33.0.tgz
     version: 0.33.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.962213634+07:00"
+    created: "2026-04-11T08:06:56.051350958Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1677,10 +1677,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.32.0.tgz
+    - https://chart.onechart.dev/onechart-0.32.0.tgz
     version: 0.32.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.96064126+07:00"
+    created: "2026-04-11T08:06:56.050813015Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1691,10 +1691,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.31.0.tgz
+    - https://chart.onechart.dev/onechart-0.31.0.tgz
     version: 0.31.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.959051483+07:00"
+    created: "2026-04-11T08:06:56.050311509Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1705,10 +1705,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.30.0.tgz
+    - https://chart.onechart.dev/onechart-0.30.0.tgz
     version: 0.30.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.955379121+07:00"
+    created: "2026-04-11T08:06:56.049262422Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1719,10 +1719,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.29.0.tgz
+    - https://chart.onechart.dev/onechart-0.29.0.tgz
     version: 0.29.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.95308674+07:00"
+    created: "2026-04-11T08:06:56.048725982Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1733,10 +1733,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.28.0.tgz
+    - https://chart.onechart.dev/onechart-0.28.0.tgz
     version: 0.28.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.952597438+07:00"
+    created: "2026-04-11T08:06:56.048209568Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1747,10 +1747,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.27.0.tgz
+    - https://chart.onechart.dev/onechart-0.27.0.tgz
     version: 0.27.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.952100872+07:00"
+    created: "2026-04-11T08:06:56.047670483Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1761,10 +1761,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.27.0-rc3.tgz
+    - https://chart.onechart.dev/onechart-0.27.0-rc3.tgz
     version: 0.27.0-rc3
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.951596872+07:00"
+    created: "2026-04-11T08:06:56.046655891Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1775,10 +1775,10 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.27.0-rc2.tgz
+    - https://chart.onechart.dev/onechart-0.27.0-rc2.tgz
     version: 0.27.0-rc2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.951080709+07:00"
+    created: "2026-04-11T08:06:56.045982374Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1789,447 +1789,447 @@ entries:
     name: onechart
     type: application
     urls:
-    - onechart-0.27.0-rc1.tgz
+    - https://chart.onechart.dev/onechart-0.27.0-rc1.tgz
     version: 0.27.0-rc1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.950550199+07:00"
+    created: "2026-04-11T08:06:56.045478675Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 3563a30dba0b6a9c7a1a3df358ca5c41e952882fd2f1bbe33c8103536870d651
     name: onechart
     type: application
     urls:
-    - onechart-0.26.0.tgz
+    - https://chart.onechart.dev/onechart-0.26.0.tgz
     version: 0.26.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.950167657+07:00"
+    created: "2026-04-11T08:06:56.04509006Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: efcbabde8193f1c3ecb34e4ede8f5efead1f77d8096180f4e8640ff94df07461
     name: onechart
     type: application
     urls:
-    - onechart-0.25.0.tgz
+    - https://chart.onechart.dev/onechart-0.25.0.tgz
     version: 0.25.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.949793021+07:00"
+    created: "2026-04-11T08:06:56.044706184Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 59f1389268efb3d970f84cae968e3ecbde57015df1201411f9f46becb4b09844
     name: onechart
     type: application
     urls:
-    - onechart-0.24.1.tgz
+    - https://chart.onechart.dev/onechart-0.24.1.tgz
     version: 0.24.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.949420639+07:00"
+    created: "2026-04-11T08:06:56.04433385Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 74b6fdf49a9fa5327fc0639f1d97f0cf553f89030c01379f3c91a5adb6f8a0f1
     name: onechart
     type: application
     urls:
-    - onechart-0.24.0.tgz
+    - https://chart.onechart.dev/onechart-0.24.0.tgz
     version: 0.24.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.949034862+07:00"
+    created: "2026-04-11T08:06:56.043921811Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: f8e444c2d5c5a4e73b76a971effda5246d3200427be45c2fb546bc990f197ecc
     name: onechart
     type: application
     urls:
-    - onechart-0.23.0.tgz
+    - https://chart.onechart.dev/onechart-0.23.0.tgz
     version: 0.23.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.948659324+07:00"
+    created: "2026-04-11T08:06:56.043561419Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: dfad2865c3eb54f0366300ef63b8ba1863ca69aa27e5ca5d3512c0d799d004d3
     name: onechart
     type: application
     urls:
-    - onechart-0.22.0.tgz
+    - https://chart.onechart.dev/onechart-0.22.0.tgz
     version: 0.22.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.948274409+07:00"
+    created: "2026-04-11T08:06:56.043194464Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 1b837cdefcb7025c40bffdd620a0f116df5ccb9023ac6a8c538bd8e77b3eb80a
     name: onechart
     type: application
     urls:
-    - onechart-0.21.0.tgz
+    - https://chart.onechart.dev/onechart-0.21.0.tgz
     version: 0.21.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.947885526+07:00"
+    created: "2026-04-11T08:06:56.042800098Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: a4f5741b46b89cd4328fbd96f96d85d53bae64b526730de5097ec33639c9c54f
     name: onechart
     type: application
     urls:
-    - onechart-0.20.0.tgz
+    - https://chart.onechart.dev/onechart-0.20.0.tgz
     version: 0.20.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.946182035+07:00"
+    created: "2026-04-11T08:06:56.042181244Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 59dd16db4f8519d3922da349aabcc2daec8385fc8a98d0f3163a84b98cc12f61
     name: onechart
     type: application
     urls:
-    - onechart-0.19.0.tgz
+    - https://chart.onechart.dev/onechart-0.19.0.tgz
     version: 0.19.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.943636547+07:00"
+    created: "2026-04-11T08:06:56.041089891Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 74c4c6a448e66929dfcafc5a641b5bdbaa8af6832c6065b02ce756dfeb3fc438
     name: onechart
     type: application
     urls:
-    - onechart-0.18.0.tgz
+    - https://chart.onechart.dev/onechart-0.18.0.tgz
     version: 0.18.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.942405466+07:00"
+    created: "2026-04-11T08:06:56.040725672Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: e1ba0bb54c3a3e13b661bb608839c7013d12e24d0437581ebfdbf5ce4a283d4d
     name: onechart
     type: application
     urls:
-    - onechart-0.17.0.tgz
+    - https://chart.onechart.dev/onechart-0.17.0.tgz
     version: 0.17.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.94128811+07:00"
+    created: "2026-04-11T08:06:56.040338921Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 596350a4977b305e4d5aae16dd8dcca62a17ea5cec9f444aacd82a12d6b3dcfe
     name: onechart
     type: application
     urls:
-    - onechart-0.16.0.tgz
+    - https://chart.onechart.dev/onechart-0.16.0.tgz
     version: 0.16.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.940091554+07:00"
+    created: "2026-04-11T08:06:56.03993643Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: d1a5a9e9bff274f32f6849bc58b201c7886240b94dd6b70b5cf3411d9ad03393
     name: onechart
     type: application
     urls:
-    - onechart-0.15.3.tgz
+    - https://chart.onechart.dev/onechart-0.15.3.tgz
     version: 0.15.3
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.938997773+07:00"
+    created: "2026-04-11T08:06:56.039554939Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 626410479f67bbbfa7e7fc94f6dfd8aae50a2bdf9fc72ec395c835dacbd5dbe7
     name: onechart
     type: application
     urls:
-    - onechart-0.15.2.tgz
+    - https://chart.onechart.dev/onechart-0.15.2.tgz
     version: 0.15.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.93786613+07:00"
+    created: "2026-04-11T08:06:56.039192432Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: e6d237aff4abedee6deb5ba57e8183c7598b255d40afdd04c03f73014f706aa3
     name: onechart
     type: application
     urls:
-    - onechart-0.15.1.tgz
+    - https://chart.onechart.dev/onechart-0.15.1.tgz
     version: 0.15.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.936755576+07:00"
+    created: "2026-04-11T08:06:56.038780875Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: d45fc4cc214bc94e4c2c10d6432562d7e65ee5e55226f677aafdfe101d7f6e7f
     name: onechart
     type: application
     urls:
-    - onechart-0.15.0.tgz
+    - https://chart.onechart.dev/onechart-0.15.0.tgz
     version: 0.15.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.935647037+07:00"
+    created: "2026-04-11T08:06:56.03841892Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 7e61a72a3400e09c44539094558a2084621239015132d20551c4593be3b5bede
     name: onechart
     type: application
     urls:
-    - onechart-0.14.0.tgz
+    - https://chart.onechart.dev/onechart-0.14.0.tgz
     version: 0.14.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.934550329+07:00"
+    created: "2026-04-11T08:06:56.038046545Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 743a9b552233770713f0c22edbe8cf4f55c890a59106e1f33055c1cb31be5a27
     name: onechart
     type: application
     urls:
-    - onechart-0.13.2.tgz
+    - https://chart.onechart.dev/onechart-0.13.2.tgz
     version: 0.13.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.933513605+07:00"
+    created: "2026-04-11T08:06:56.037689288Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 02bf9537e13cea0da9dc3bfbcdd45d51576354cb18b7c1c7cec76f829e20105f
     name: onechart
     type: application
     urls:
-    - onechart-0.13.1.tgz
+    - https://chart.onechart.dev/onechart-0.13.1.tgz
     version: 0.13.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.932507859+07:00"
+    created: "2026-04-11T08:06:56.037346529Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 5183ed825c4f255ca5a4f0ffeb8c92bbad3c43b42fc1b798f1f1fc6de2a30bef
     name: onechart
     type: application
     urls:
-    - onechart-0.13.0.tgz
+    - https://chart.onechart.dev/onechart-0.13.0.tgz
     version: 0.13.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.931523995+07:00"
+    created: "2026-04-11T08:06:56.036967132Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: e131a502d12a6b074453f1da8d0d1ca7145e80a025f31252b24cc3d62375a4c1
     name: onechart
     type: application
     urls:
-    - onechart-0.12.2.tgz
+    - https://chart.onechart.dev/onechart-0.12.2.tgz
     version: 0.12.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.930801493+07:00"
+    created: "2026-04-11T08:06:56.036438245Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 8e1a25d18a546c4ec5e970991301a08e38495a964a8f6e0a2ee97f92c41c9691
     name: onechart
     type: application
     urls:
-    - onechart-0.12.1.tgz
+    - https://chart.onechart.dev/onechart-0.12.1.tgz
     version: 0.12.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.929822137+07:00"
+    created: "2026-04-11T08:06:56.035575092Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: f38a6f2fbf5c847b00a9140ecd004e0bf667d859aa83d8dac4a2d0eecd1a361f
     name: onechart
     type: application
     urls:
-    - onechart-0.12.0.tgz
+    - https://chart.onechart.dev/onechart-0.12.0.tgz
     version: 0.12.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.92905453+07:00"
+    created: "2026-04-11T08:06:56.035267528Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 75c16f84b5e99aad5aa7203f5c1ce2a9589d85b89afec4e161a2e0344a522c17
     name: onechart
     type: application
     urls:
-    - onechart-0.11.0.tgz
+    - https://chart.onechart.dev/onechart-0.11.0.tgz
     version: 0.11.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.928162769+07:00"
+    created: "2026-04-11T08:06:56.034950837Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 40f1166e858d35cb237debd1390187884641b0e8c29a80aaa195b66b0ee73516
     name: onechart
     type: application
     urls:
-    - onechart-0.10.0.tgz
+    - https://chart.onechart.dev/onechart-0.10.0.tgz
     version: 0.10.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.041991032+07:00"
+    created: "2026-04-11T08:06:56.094022169Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: cb42b08b463b401f6718bba7c171ee55c173021c5101ea1b3068ef3899a6e164
     name: onechart
     type: application
     urls:
-    - onechart-0.9.0.tgz
+    - https://chart.onechart.dev/onechart-0.9.0.tgz
     version: 0.9.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.040965309+07:00"
+    created: "2026-04-11T08:06:56.093031801Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: ce046d209a9e8fa07766712492cc896451473fafca129dbc9c675107d0e39c52
     name: onechart
     type: application
     urls:
-    - onechart-0.8.2.tgz
+    - https://chart.onechart.dev/onechart-0.8.2.tgz
     version: 0.8.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.040693727+07:00"
+    created: "2026-04-11T08:06:56.092728556Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 422d7e6ea1bed530d4cd5e23417b229772a6fe2e835828ca282a3e6c9b646b2b
     name: onechart
     type: application
     urls:
-    - onechart-0.8.1.tgz
+    - https://chart.onechart.dev/onechart-0.8.1.tgz
     version: 0.8.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.040418848+07:00"
+    created: "2026-04-11T08:06:56.09246279Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 8001bd02fc90ad66da7941c136ee8d0e665ea90b6e1ac27d82b048f2b12b3964
     name: onechart
     type: application
     urls:
-    - onechart-0.8.0.tgz
+    - https://chart.onechart.dev/onechart-0.8.0.tgz
     version: 0.8.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.02885471+07:00"
+    created: "2026-04-11T08:06:56.084745858Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: d1454b430eb7131d0d450f7c0a8a6698278893c61e03d48649a8112dfcf42b72
     name: onechart
     type: application
     urls:
-    - onechart-0.7.1.tgz
+    - https://chart.onechart.dev/onechart-0.7.1.tgz
     version: 0.7.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.028231836+07:00"
+    created: "2026-04-11T08:06:56.084503577Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 4bf90835f287917671ec40b5b395da9332cf18e70f248d250f8d5a72360dcb4e
     name: onechart
     type: application
     urls:
-    - onechart-0.7.0.tgz
+    - https://chart.onechart.dev/onechart-0.7.0.tgz
     version: 0.7.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.995669437+07:00"
+    created: "2026-04-11T08:06:56.071093002Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 0cade489fc74a040f5e7f71d01c6fa00d3f68b4752a4d8234ccf2c1504b4c0a1
     name: onechart
     type: application
     urls:
-    - onechart-0.6.1.tgz
+    - https://chart.onechart.dev/onechart-0.6.1.tgz
     version: 0.6.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.995002079+07:00"
+    created: "2026-04-11T08:06:56.070616634Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: d607820a7e104eaaa88c153c1f2f7f409ef4c612ad747caeb3a671cf3fce03d4
     name: onechart
     type: application
     urls:
-    - onechart-0.6.0.tgz
+    - https://chart.onechart.dev/onechart-0.6.0.tgz
     version: 0.6.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.978411276+07:00"
+    created: "2026-04-11T08:06:56.063375096Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: ddf7cf87402095d62855898744b805115fdf86c4b295e0a4def0c50408fd9138
     name: onechart
     type: application
     urls:
-    - onechart-0.5.1.tgz
+    - https://chart.onechart.dev/onechart-0.5.1.tgz
     version: 0.5.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.978188556+07:00"
+    created: "2026-04-11T08:06:56.063153423Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: adf3c2cf3a27e58ec75620599e0e1c2031a7410a061a590317beeff6d8a9ad69
     name: onechart
     type: application
     urls:
-    - onechart-0.5.0.tgz
+    - https://chart.onechart.dev/onechart-0.5.0.tgz
     version: 0.5.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.9712887+07:00"
+    created: "2026-04-11T08:06:56.056242896Z"
     description: One chart to rule them all. A generic Helm chart for your application
       deployments. Because no-one can remember the Kubernetes yaml syntax.
     digest: 8dab33263c4e632aeb4656c666871440b589497b70e76a1d6c3a5e3db1a30bba
     name: onechart
     type: application
     urls:
-    - onechart-0.4.0.tgz
+    - https://chart.onechart.dev/onechart-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.957089375+07:00"
+    created: "2026-04-11T08:06:56.049784115Z"
     description: A generic Helm chart for your application deployments
     digest: fbaf6139e0ef8ad9a87cc1e41a97c7d25fdcf7ea17fa6364952f1a851a87480a
     name: onechart
     type: application
     urls:
-    - onechart-0.3.2.tgz
+    - https://chart.onechart.dev/onechart-0.3.2.tgz
     version: 0.3.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.956572761+07:00"
+    created: "2026-04-11T08:06:56.049614699Z"
     description: A generic Helm chart for your application deployments
     digest: bd6f5b1865ab9b05fc6925c163ab8045235bd2723dba31f09d5083d24322d1f8
     name: onechart
     type: application
     urls:
-    - onechart-0.3.1.tgz
+    - https://chart.onechart.dev/onechart-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.956028495+07:00"
+    created: "2026-04-11T08:06:56.04944371Z"
     description: A generic Helm chart for your application deployments
     digest: c79cef21eceab948144a289298cdf1e20e77a0782a883d7d65f9e709ccbbc271
     name: onechart
     type: application
     urls:
-    - onechart-0.3.0.tgz
+    - https://chart.onechart.dev/onechart-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.946790562+07:00"
+    created: "2026-04-11T08:06:56.042421643Z"
     description: A generic Helm chart for your application deployments
     digest: dd814ac5d08d5e6163a1b769df6803f5cb0f09d906045086dfcc5be522bb1ec3
     name: onechart
     type: application
     urls:
-    - onechart-0.2.0.tgz
+    - https://chart.onechart.dev/onechart-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.926728986+07:00"
+    created: "2026-04-11T08:06:56.034670695Z"
     description: A generic Helm chart for your application deployments
     digest: e46062df8053840cbfbba26c0a66a843a79f15a0b43a145ed019327513bd5098
     name: onechart
     type: application
     urls:
-    - onechart-0.1.2.tgz
+    - https://chart.onechart.dev/onechart-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.925868424+07:00"
+    created: "2026-04-11T08:06:56.034504344Z"
     description: A generic Helm chart for your application deployments
     digest: a7bbc8b7dcc008e89156cd1830282b7d39c0592e82ccdcefb77a25a42eca2a3d
     name: onechart
     type: application
     urls:
-    - onechart-0.1.1.tgz
+    - https://chart.onechart.dev/onechart-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:52.925434767+07:00"
+    created: "2026-04-11T08:06:56.034330691Z"
     description: A generic Helm chart for your application deployments
     digest: 1ed8c0645abdae6c950526e9c5410dc056847a11700dc7def5f1c55eb7de0cd4
     name: onechart
     type: application
     urls:
-    - onechart-0.1.0.tgz
+    - https://chart.onechart.dev/onechart-0.1.0.tgz
     version: 0.1.0
   static-site:
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.07988414+07:00"
+    created: "2026-04-11T08:06:56.109292765Z"
     dependencies:
     - name: common
       repository: file://../common
       version: 0.10.0
     description: Chart to build and deploy static sites
-    digest: 123d021e802afa75cf6b16d2155120d5e5176569a16703551f1eae69764996f2
+    digest: b4bb697ace205cf0e021fa55ac8141f280be7fbbc6d8c5ba5e6eaf72a89ed8a6
     name: static-site
     type: application
     urls:
-    - static-site-0.80.0.tgz
+    - https://chart.onechart.dev/static-site-0.80.0.tgz
     version: 0.80.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.078584149+07:00"
+    created: "2026-04-11T08:06:56.108772815Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2239,10 +2239,10 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.79.0.tgz
+    - https://chart.onechart.dev/static-site-0.79.0.tgz
     version: 0.79.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.077266235+07:00"
+    created: "2026-04-11T08:06:56.108275838Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2252,10 +2252,10 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.78.0.tgz
+    - https://chart.onechart.dev/static-site-0.78.0.tgz
     version: 0.78.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.075757321+07:00"
+    created: "2026-04-11T08:06:56.107290163Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2265,10 +2265,10 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.77.0.tgz
+    - https://chart.onechart.dev/static-site-0.77.0.tgz
     version: 0.77.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.073945576+07:00"
+    created: "2026-04-11T08:06:56.106426581Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2278,10 +2278,10 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.76.0.tgz
+    - https://chart.onechart.dev/static-site-0.76.0.tgz
     version: 0.76.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.072150261+07:00"
+    created: "2026-04-11T08:06:56.105935065Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2291,10 +2291,10 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.75.0.tgz
+    - https://chart.onechart.dev/static-site-0.75.0.tgz
     version: 0.75.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.070977541+07:00"
+    created: "2026-04-11T08:06:56.105461071Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2304,10 +2304,10 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.74.0.tgz
+    - https://chart.onechart.dev/static-site-0.74.0.tgz
     version: 0.74.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.069511517+07:00"
+    created: "2026-04-11T08:06:56.104966057Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2317,10 +2317,10 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.73.0.tgz
+    - https://chart.onechart.dev/static-site-0.73.0.tgz
     version: 0.73.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.068069249+07:00"
+    created: "2026-04-11T08:06:56.104489979Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2330,10 +2330,10 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.72.0.tgz
+    - https://chart.onechart.dev/static-site-0.72.0.tgz
     version: 0.72.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.06688699+07:00"
+    created: "2026-04-11T08:06:56.103949251Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2343,10 +2343,10 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.71.0.tgz
+    - https://chart.onechart.dev/static-site-0.71.0.tgz
     version: 0.71.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.065420656+07:00"
+    created: "2026-04-11T08:06:56.10347736Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -2356,222 +2356,222 @@ entries:
     name: static-site
     type: application
     urls:
-    - static-site-0.70.0.tgz
+    - https://chart.onechart.dev/static-site-0.70.0.tgz
     version: 0.70.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.063968098+07:00"
+    created: "2026-04-11T08:06:56.102969754Z"
     description: Chart to build and deploy static sites
     digest: 15c2ee0a98e9762e60e3bb6a8db06e4dc7dac9bebcf439922aa5f64e7d4bd41e
     name: static-site
     type: application
     urls:
-    - static-site-0.69.0.tgz
+    - https://chart.onechart.dev/static-site-0.69.0.tgz
     version: 0.69.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.063281193+07:00"
+    created: "2026-04-11T08:06:56.102682017Z"
     description: Chart to build and deploy static sites
     digest: 2bb2c74dbc4550345d280c56582eead02776b066981441ede5899b2c2b9f6e0c
     name: static-site
     type: application
     urls:
-    - static-site-0.68.0.tgz
+    - https://chart.onechart.dev/static-site-0.68.0.tgz
     version: 0.68.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.062380836+07:00"
+    created: "2026-04-11T08:06:56.102389461Z"
     description: Chart to build and deploy static sites
     digest: f8f021af14c2c67cac2b7a394556f6524264189192bcc8e0a4cfeaa52a9fe6fb
     name: static-site
     type: application
     urls:
-    - static-site-0.67.0.tgz
+    - https://chart.onechart.dev/static-site-0.67.0.tgz
     version: 0.67.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.060395113+07:00"
+    created: "2026-04-11T08:06:56.102038837Z"
     description: Chart to build and deploy static sites
     digest: 8543a5accf5644331743f7a0daf24aa402e6bef663970b57cfbd263aea0af165
     name: static-site
     type: application
     urls:
-    - static-site-0.66.0.tgz
+    - https://chart.onechart.dev/static-site-0.66.0.tgz
     version: 0.66.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.059116553+07:00"
+    created: "2026-04-11T08:06:56.10174535Z"
     description: Chart to build and deploy static sites
     digest: 1f3ba2ce15906f885e2bb0000fd3ee385df03eab222e106d19f59032214fc462
     name: static-site
     type: application
     urls:
-    - static-site-0.65.0.tgz
+    - https://chart.onechart.dev/static-site-0.65.0.tgz
     version: 0.65.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.058431271+07:00"
+    created: "2026-04-11T08:06:56.101432376Z"
     description: Chart to build and deploy static sites
     digest: 8b47812556f59a5e0fc8f6fe3ca4663461e67dad15137442a6a32dc2d5edea9e
     name: static-site
     type: application
     urls:
-    - static-site-0.64.0.tgz
+    - https://chart.onechart.dev/static-site-0.64.0.tgz
     version: 0.64.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.057700123+07:00"
+    created: "2026-04-11T08:06:56.100713462Z"
     description: Chart to build and deploy static sites
     digest: 939cbef93d8e09f370c37c73fd95efc99d28361975ce1b859625044240ed2807
     name: static-site
     type: application
     urls:
-    - static-site-0.64.0-rc.2.tgz
+    - https://chart.onechart.dev/static-site-0.64.0-rc.2.tgz
     version: 0.64.0-rc.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.056783485+07:00"
+    created: "2026-04-11T08:06:56.099997827Z"
     description: Chart to build and deploy static sites
     digest: 8af89841d8184856b1e6843c20a14fce51bf46e784c9f2a3140a334cd5932608
     name: static-site
     type: application
     urls:
-    - static-site-0.63.0.tgz
+    - https://chart.onechart.dev/static-site-0.63.0.tgz
     version: 0.63.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.055909037+07:00"
+    created: "2026-04-11T08:06:56.099719398Z"
     description: Chart to build and deploy static sites
     digest: dc108e075e2ba579b30d68bc5364adaecbc4b8c11535861d962c5787f9ed198a
     name: static-site
     type: application
     urls:
-    - static-site-0.63.0-rc.3.tgz
+    - https://chart.onechart.dev/static-site-0.63.0-rc.3.tgz
     version: 0.63.0-rc.3
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.055005253+07:00"
+    created: "2026-04-11T08:06:56.099414389Z"
     description: Chart to build and deploy static sites
     digest: 87b850c57a52b7fc9d025ccf1d390557728355d8874c0a1f8efcfafd9f7c87c3
     name: static-site
     type: application
     urls:
-    - static-site-0.63.0-rc.2.tgz
+    - https://chart.onechart.dev/static-site-0.63.0-rc.2.tgz
     version: 0.63.0-rc.2
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.054145633+07:00"
+    created: "2026-04-11T08:06:56.09909857Z"
     description: Chart to build and deploy static sites
     digest: fffcc8edac47cc87244bdf7325c6ac880f4bddab5e22b8aeba90b92f51425c22
     name: static-site
     type: application
     urls:
-    - static-site-0.63.0-rc.1.tgz
+    - https://chart.onechart.dev/static-site-0.63.0-rc.1.tgz
     version: 0.63.0-rc.1
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.05327419+07:00"
+    created: "2026-04-11T08:06:56.098810532Z"
     description: Chart to build and deploy static sites
     digest: c63bc30ae3acbc4bf3bcfe22d8255c4f8fb593b4d07dac5aad678668d9555e2b
     name: static-site
     type: application
     urls:
-    - static-site-0.62.0.tgz
+    - https://chart.onechart.dev/static-site-0.62.0.tgz
     version: 0.62.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.052402938+07:00"
+    created: "2026-04-11T08:06:56.098532684Z"
     description: Chart to build and deploy static sites
     digest: 2ed116159a2412d6063d863e9e59ba4e136a0115ca98298019703248c3ddeac0
     name: static-site
     type: application
     urls:
-    - static-site-0.62.0-rc.3.tgz
+    - https://chart.onechart.dev/static-site-0.62.0-rc.3.tgz
     version: 0.62.0-rc.3
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.05164524+07:00"
+    created: "2026-04-11T08:06:56.098249877Z"
     description: Chart to build and deploy static sites
     digest: 8ebb73b0ac8be45cbce8e77061e14c9d0b7619d127137d748345097ebd233ac6
     name: static-site
     type: application
     urls:
-    - static-site-0.61.0.tgz
+    - https://chart.onechart.dev/static-site-0.61.0.tgz
     version: 0.61.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.050956381+07:00"
+    created: "2026-04-11T08:06:56.097932204Z"
     description: Chart to build and deploy static sites
     digest: 8d50d5c10503d3180ebf6e00bef8136833efcd47ea57d51e768b34183897585d
     name: static-site
     type: application
     urls:
-    - static-site-0.60.0.tgz
+    - https://chart.onechart.dev/static-site-0.60.0.tgz
     version: 0.60.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.050302329+07:00"
+    created: "2026-04-11T08:06:56.097655989Z"
     description: Chart to build and deploy static sites
     digest: d485011b302792860258c4abba2273f74165ea491bf3ccb28e1e49d784e230a4
     name: static-site
     type: application
     urls:
-    - static-site-0.59.0.tgz
+    - https://chart.onechart.dev/static-site-0.59.0.tgz
     version: 0.59.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.049463277+07:00"
+    created: "2026-04-11T08:06:56.097377139Z"
     description: Chart to build and deploy static sites
     digest: f62fd4d04967e7f4a55c6edb42cde98811d6dd3165d5a00414df02627a32e0a0
     name: static-site
     type: application
     urls:
-    - static-site-0.58.0.tgz
+    - https://chart.onechart.dev/static-site-0.58.0.tgz
     version: 0.58.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.04858433+07:00"
+    created: "2026-04-11T08:06:56.097062562Z"
     description: Chart to build and deploy static sites
     digest: 02c948ac12e84aa9f4dbfc04c707a696bf9fe906a526b64498af9f788f1f1c08
     name: static-site
     type: application
     urls:
-    - static-site-0.57.0.tgz
+    - https://chart.onechart.dev/static-site-0.57.0.tgz
     version: 0.57.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.047711916+07:00"
+    created: "2026-04-11T08:06:56.096781147Z"
     description: Chart to build and deploy static sites
     digest: b6f8780c07f25f0673ac3657ac7da2f2311d6a054a4ad085b2bc1de55a715d14
     name: static-site
     type: application
     urls:
-    - static-site-0.56.0.tgz
+    - https://chart.onechart.dev/static-site-0.56.0.tgz
     version: 0.56.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.04681243+07:00"
+    created: "2026-04-11T08:06:56.096498811Z"
     description: Chart to build and deploy static sites
     digest: 996d067a5e569764e824cabeee040b6786512ddcb90760c495c67e48c2d8f613
     name: static-site
     type: application
     urls:
-    - static-site-0.55.0.tgz
+    - https://chart.onechart.dev/static-site-0.55.0.tgz
     version: 0.55.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.04584168+07:00"
+    created: "2026-04-11T08:06:56.096203359Z"
     description: Chart to build and deploy static sites
     digest: daa3189dd1ee1cc328227ec11a59359876da8c29f28b50a36e0bd57fb12fe1ce
     name: static-site
     type: application
     urls:
-    - static-site-0.54.0.tgz
+    - https://chart.onechart.dev/static-site-0.54.0.tgz
     version: 0.54.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.045127164+07:00"
+    created: "2026-04-11T08:06:56.095850601Z"
     description: Chart to build and deploy static sites
     digest: e9c0c056470f40fc97119ca4c4a9b1b0c84f19c98792fee0b55c91cb57f93671
     name: static-site
     type: application
     urls:
-    - static-site-0.53.0.tgz
+    - https://chart.onechart.dev/static-site-0.53.0.tgz
     version: 0.53.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.044369646+07:00"
+    created: "2026-04-11T08:06:56.09549074Z"
     description: Chart to build and deploy static sites
     digest: ef72c7cc95bbf6c123bb2f6a80ced12a3e6f09c866b2ff9057caa6692e16c2e1
     name: static-site
     type: application
     urls:
-    - static-site-0.52.0.tgz
+    - https://chart.onechart.dev/static-site-0.52.0.tgz
     version: 0.52.0
   - apiVersion: v2
-    created: "2026-04-11T14:48:53.043577593+07:00"
+    created: "2026-04-11T08:06:56.094707848Z"
     description: Chart to build and deploy static sites
     digest: d26cef52a3aace6285173de55981375086aec3b4b52027bc2e42d16632190497
     name: static-site
     type: application
     urls:
-    - static-site-0.1.0.tgz
+    - https://chart.onechart.dev/static-site-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-11T14:48:52.862356476+07:00"
+generated: "2026-04-11T08:06:56.003216071Z"
