@@ -201,8 +201,8 @@ tests:
         - name: volume-name
           fileName: myfile.conf
           fileContent: |
-              blablabla
-              bla
+            blablabla
+            bla
           path: /randomPath/myfile.conf
           subPath: myfile.conf
     asserts:
@@ -225,7 +225,7 @@ tests:
   - it: Should mount a volume only for the init container
     set:
       initContainers:
-        - name : pod
+        - name: pod
           image: debian
           tag: v1.0.0
       volumes:
@@ -238,26 +238,26 @@ tests:
         equal:
           path: spec.template.spec.volumes
           value:
-          - name: init-volume
-            emptyDir: {} 
+            - name: init-volume
+              emptyDir: {}
       - template: deployment.yaml
         documentIndex: 0
         equal:
           path: spec.template.spec.initContainers[0].volumeMounts
           value:
-          - name: init-volume
-            mountPath: /data 
+            - name: init-volume
+              mountPath: /data
       - template: deployment.yaml
         documentIndex: 0
         notEqual:
           path: spec.template.spec.containers[0].volumeMounts
           value:
-          - name: init-volume
-            emptyDir: {}
+            - name: init-volume
+              emptyDir: {}
   - it: Should mount a shared volume between the main container and the init container
     set:
       initContainers:
-        - name : pod
+        - name: pod
           image: debian
           tag: v1.0.0
       volumes:
@@ -270,12 +270,84 @@ tests:
         equal:
           path: spec.template.spec.initContainers[0].volumeMounts
           value:
-          - name: shared-volume
-            mountPath: /data
+            - name: shared-volume
+              mountPath: /data
       - template: deployment.yaml
         documentIndex: 0
         equal:
           path: spec.template.spec.containers[0].volumeMounts
           value:
-          - name: shared-volume
-            mountPath: /data      
+            - name: shared-volume
+              mountPath: /data
+  - it: Should use an existing secret as volume with sharedSecretFiles
+    set:
+      sharedSecretFiles:
+        - name: opsta-secret
+          files:
+            - mountPath: /randomPath/app.creds
+              subPath: app.creds
+            - mountPath: /randomPath/app.conf
+              subPath: app.conf
+    asserts:
+      - template: deployment.yaml
+        documentIndex: 0
+        equal:
+          path: spec.template.spec.volumes
+          value:
+            - name: opsta-secret
+              secret:
+                secretName: opsta-secret
+      - template: deployment.yaml
+        documentIndex: 0
+        equal:
+          path: spec.template.spec.containers[0].volumeMounts
+          value:
+            - name: opsta-secret
+              readOnly: true
+              mountPath: /randomPath/app.creds
+              subPath: app.creds
+            - name: opsta-secret
+              readOnly: true
+              mountPath: /randomPath/app.conf
+              subPath: app.conf
+  - it: Should use sharedSecretFiles and other volumes
+    set:
+      sharedSecretFiles:
+        - name: opsta-secret
+          files:
+            - mountPath: /randomPath/app.creds
+              subPath: app.creds
+            - mountPath: /randomPath/app.conf
+              subPath: app.conf
+      volumes:
+        - name: opsta-volume
+          path: /opt/data
+          size: 20Gi
+          storageClass: default
+    asserts:
+      - template: deployment.yaml
+        documentIndex: 0
+        equal:
+          path: spec.template.spec.volumes
+          value:
+            - name: opsta-volume
+              persistentVolumeClaim:
+                claimName: RELEASE-NAME-opsta-volume
+            - name: opsta-secret
+              secret:
+                secretName: opsta-secret
+      - template: deployment.yaml
+        documentIndex: 0
+        equal:
+          path: spec.template.spec.containers[0].volumeMounts
+          value:
+            - mountPath: /opt/data
+              name: opsta-volume
+            - name: opsta-secret
+              readOnly: true
+              mountPath: /randomPath/app.creds
+              subPath: app.creds
+            - name: opsta-secret
+              readOnly: true
+              mountPath: /randomPath/app.conf
+              subPath: app.conf
