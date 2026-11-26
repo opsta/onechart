@@ -50,7 +50,7 @@ package:
 	helm package charts/static-site
 	mv static-site*.tgz docs
 
-	helm repo index docs --url https://chart.onechart.dev
+	helm repo index docs --url https://opsta.github.io/onechart
 
 debug:
 	helm dependency update charts/onechart
