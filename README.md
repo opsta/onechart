@@ -52,6 +52,30 @@ ingress:
   host: my-app.mycompany.com
 ```
 
+## Helm repository
+
+The charts are published in two places:
+
+* the OCI registry `oci://ghcr.io/opsta` (recommended), as used in the examples above:
+
+```bash
+helm template my-release oci://ghcr.io/opsta/onechart --version 0.81.0 \
+  --set image.repository=nginx \
+  --set image.tag=1.19.3
+```
+
+* a classic Helm repository served from GitHub Pages at https://opsta.github.io/onechart:
+
+```bash
+helm repo add onechart https://opsta.github.io/onechart
+helm repo update
+helm template my-release onechart/onechart --version 0.81.0 \
+  --set image.repository=nginx \
+  --set image.tag=1.19.3
+```
+
+The `cron-job` and `static-site` charts are available the same way (`oci://ghcr.io/opsta/cron-job`, `onechart/cron-job`, and so on).
+
 ## Contribution Guidelines
 
 Thank you for your interest in contributing to the OneChart project.
