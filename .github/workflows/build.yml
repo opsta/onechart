@@ -7,37 +7,54 @@ on:
     branches:
       - '*'
 
+permissions:
+  contents: read
+
+env:
+  # Pinned tool versions. Update the version and its sha256 together.
+  HELM_VERSION: v3.22.1
+  HELM_SHA256: 896cf63684a42a723d61c980369d6e588330927deb13676ca0d85006dd6da0ea # helm-v3.22.1-linux-amd64.tar.gz
+  HELM_UNITTEST_VERSION: v1.2.1
+  KUBECONFORM_VERSION: v0.8.0
+  KUBECONFORM_SHA256: 9bc2bffbf71f261128533edaf912153948b7ff238f9a531ae6d34466ec287883 # kubeconform-linux-amd64.tar.gz
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
 
-    - name: Set up Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: 1.16
-        cache: false
-
     - name: Deps
       run: |
-        curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-        chmod 700 get_helm.sh
-        ./get_helm.sh
+        mkdir -p "$RUNNER_TEMP/bin" "$RUNNER_TEMP/dl"
+        cd "$RUNNER_TEMP/dl"
 
-        wget https://github.com/instrumenta/kubeval/releases/latest/download/kubeval-linux-amd64.tar.gz
-        tar xf kubeval-linux-amd64.tar.gz
-        sudo cp kubeval /usr/local/bin
+        curl -fsSLO "https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz"
+        echo "${HELM_SHA256}  helm-${HELM_VERSION}-linux-amd64.tar.gz" | sha256sum -c -
+        tar -xzf "helm-${HELM_VERSION}-linux-amd64.tar.gz" linux-amd64/helm
+        mv linux-amd64/helm "$RUNNER_TEMP/bin/helm"
 
-        helm plugin install https://github.com/helm-unittest/helm-unittest
+        curl -fsSLO "https://github.com/yannh/kubeconform/releases/download/${KUBECONFORM_VERSION}/kubeconform-linux-amd64.tar.gz"
+        echo "${KUBECONFORM_SHA256}  kubeconform-linux-amd64.tar.gz" | sha256sum -c -
+        tar -xzf kubeconform-linux-amd64.tar.gz kubeconform
+        mv kubeconform "$RUNNER_TEMP/bin/kubeconform"
+
+        echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+        export PATH="$RUNNER_TEMP/bin:$PATH"
+
+        helm plugin install https://github.com/helm-unittest/helm-unittest --version "${HELM_UNITTEST_VERSION}"
+
+        helm version
+        kubeconform -v
+        helm plugin list
 
     - name: Check out
-      uses: actions/checkout@v4
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         fetch-depth: 1
 
     - name: Test
       run: |
         make lint
-        make kubeval
+        make kubeconform
         make test

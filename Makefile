@@ -1,31 +1,32 @@
 
-.PHONY: all lint kubeval test package debug debug-ui
+.PHONY: all lint kubeconform kubeval test package debug debug-ui
 
-all: lint kubeval test package
+all: lint kubeconform test package
+
+# Kubernetes versions the rendered manifests are validated against.
+# Schemas come from https://github.com/yannh/kubernetes-json-schema (kubeconform's default source).
+KUBERNETES_VERSIONS ?= 1.34.0 1.35.0 1.36.0 1.37.0
+KUBECONFORM_FLAGS ?= -strict -ignore-missing-schemas -summary
 
 lint:
 	helm lint charts/onechart/
 	helm lint charts/cron-job/
 	helm lint charts/static-site
 
-kubeval:
-	rm -rf manifests && true
-	mkdir manifests
-	helm template charts/onechart --output-dir manifests
-	find manifests/ -name '*.yaml' | xargs kubeval --ignore-missing-schemas -v 1.20.0
-	find manifests/ -name '*.yaml' | xargs kubeval --ignore-missing-schemas -v 1.24.0
+kubeconform:
+	@set -e; for chart in onechart cron-job static-site; do \
+		rm -rf manifests; \
+		mkdir manifests; \
+		echo "helm template charts/$$chart --output-dir manifests"; \
+		helm template charts/$$chart --output-dir manifests; \
+		for version in $(KUBERNETES_VERSIONS); do \
+			echo "kubeconform $(KUBECONFORM_FLAGS) -kubernetes-version $$version manifests/"; \
+			kubeconform $(KUBECONFORM_FLAGS) -kubernetes-version $$version manifests/; \
+		done; \
+	done
 
-	rm -rf manifests && true
-	mkdir manifests
-	helm template charts/cron-job --output-dir manifests
-	find manifests/ -name '*.yaml' | xargs kubeval --ignore-missing-schemas -v 1.20.0
-	find manifests/ -name '*.yaml' | xargs kubeval --ignore-missing-schemas -v 1.24.0
-
-	rm -rf manifests && true
-	mkdir manifests
-	helm template charts/static-site --output-dir manifests
-	find manifests/ -name '*.yaml' | xargs kubeval --ignore-missing-schemas -v 1.20.0
-	find manifests/ -name '*.yaml' | xargs kubeval --ignore-missing-schemas -v 1.24.0
+# Kept for backwards compatibility: kubeval was replaced by kubeconform.
+kubeval: kubeconform
 
 test:
 	helm dependency update charts/onechart

@@ -5,6 +5,14 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: read
+
+env:
+  # Pinned tool versions. Update the version and its sha256 together.
+  HELM_VERSION: v3.22.1
+  HELM_SHA256: 896cf63684a42a723d61c980369d6e588330927deb13676ca0d85006dd6da0ea # helm-v3.22.1-linux-amd64.tar.gz
+
 jobs:
   release:
     name: Release
@@ -16,8 +24,19 @@ jobs:
 
     steps:
 
+    - name: Install helm
+      run: |
+        mkdir -p "$RUNNER_TEMP/bin" "$RUNNER_TEMP/dl"
+        cd "$RUNNER_TEMP/dl"
+        curl -fsSLO "https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz"
+        echo "${HELM_SHA256}  helm-${HELM_VERSION}-linux-amd64.tar.gz" | sha256sum -c -
+        tar -xzf "helm-${HELM_VERSION}-linux-amd64.tar.gz" linux-amd64/helm
+        mv linux-amd64/helm "$RUNNER_TEMP/bin/helm"
+        echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+        "$RUNNER_TEMP/bin/helm" version
+
     - name: Checkout main
-      uses: actions/checkout@v4
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         fetch-depth: 0
 
@@ -66,7 +85,7 @@ jobs:
         STATIC_SITE_VERSION: ${{ steps.chart_versions.outputs.static_site_version }}
 
     - name: Create a Release
-      uses: elgohr/Github-Release-Action@v5
+      uses: elgohr/Github-Release-Action@c5ea99036abb741a89f8bf1f2cd7fba845e3313a # v5
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
